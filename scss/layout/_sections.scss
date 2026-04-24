@@ -1,0 +1,36 @@
+// Generic section wave (subtle curved transition between white and
+// section-alt grey panels). Used at the TOP of a section to curve the
+// previous section's color into the current one.
+.section-wave {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: -1px;
+
+  @include media-breakpoint-up(md) { height: 50px; }
+  @include media-breakpoint-up(lg) { height: 70px; }
+}
+
+.section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+// Sections with subtle grey background alternation.
+.section-alt { background-color: $light; }
+
+// Give the section immediately after the hero enough top padding to sit
+// below the overlapping hero card. The wave already adds ~140px of visual
+// buffer on lg+, so we only need a bit more for the card to clear.
+.section--after-hero {
+  padding-top: 4rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 7rem;
+  }
+}

@@ -1,0 +1,22 @@
+// "Journey" wrapper: hosts the 4 content sections (Tools, Features,
+// Technology, Install) over one continuous white background, plus a
+// decorative dashed SVG that snakes between them.
+.journey {
+  background-color: #fff;
+}
+
+.journey-connector {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;  // never interferes with clicks
+  z-index: 0;
+  // Hidden on small screens — the dashed line becomes visual noise when
+  // sections are stacked linearly on mobile.
+  display: none;
+  @include media-breakpoint-up(lg) { display: block; }
+}
+
+// Ensure section contents sit above the connector line.
+.journey > section { position: relative; z-index: 1; }

@@ -1,0 +1,9 @@
+// Generic brand badge (used in the "Tools" section headline etc.)
+.brand-dot {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background: $primary;
+  display: inline-block;
+  margin-right: .5rem;
+}

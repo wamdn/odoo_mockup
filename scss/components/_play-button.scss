@@ -1,0 +1,15 @@
+.play-button {
+  --size: 72px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: #fff;
+  color: $primary;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(#0b1838, .25);
+  transition: transform .2s ease;
+
+  &:hover { transform: scale(1.05); }
+}

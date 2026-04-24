@@ -1,0 +1,16 @@
+// Motion: single orchestrated entrance for the hero (high-impact moment on
+// load). Disabled automatically for users that prefer less motion.
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise      { animation: rise-in .7s cubic-bezier(.2,.7,.2,1) both; }
+  .rise-1    { animation: rise-in .7s cubic-bezier(.2,.7,.2,1) both; animation-delay: .05s; }
+  .rise-2    { animation: rise-in .7s cubic-bezier(.2,.7,.2,1) both; animation-delay: .15s; }
+  .rise-3    { animation: rise-in .7s cubic-bezier(.2,.7,.2,1) both; animation-delay: .25s; }
+  .rise-4    { animation: rise-in .7s cubic-bezier(.2,.7,.2,1) both; animation-delay: .35s; }
+  .rise-5    { animation: rise-in .8s cubic-bezier(.2,.7,.2,1) both; animation-delay: .45s; }
+}

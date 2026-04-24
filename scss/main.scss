@@ -1,0 +1,57 @@
+// ---------------------------------------------------------------------------
+// Odoo design exercise - Bootstrap 5.3 customised build (7-1 pattern)
+//
+// Load order (critical):
+//   1. Bootstrap functions    - needed by our variable overrides (color helpers)
+//   2. abstracts/variables    - our overrides (every var is declared !default
+//                               in Bootstrap, so ours must come FIRST)
+//   3. Bootstrap variables/maps - defines $theme-colors, $utilities, etc.
+//   4. abstracts/theme-maps   - extends those maps with brand colors
+//   5. vendors/bootstrap      - the rest of Bootstrap (mixins + components)
+//   6. base / layout / components / utilities - our own partials, which can
+//                               now freely use any Bootstrap var or mixin
+// ---------------------------------------------------------------------------
+
+// 1. Bootstrap functions (must come first so color helpers are available
+//    inside our variable overrides).
+@import "bootstrap/scss/functions";
+
+// 2. Abstracts - our variable overrides.
+@import "abstracts/variables";
+
+// 3. Bootstrap variables + maps.
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+
+// 4. Abstracts - extend Bootstrap maps with brand colors.
+@import "abstracts/theme-maps";
+
+// 5. Vendors - rest of Bootstrap (mixins, utilities API, components).
+@import "vendors/bootstrap";
+
+// 6. Base.
+@import "base/base";
+@import "base/animations";
+
+// 7. Layout.
+@import "layout/navbar";
+@import "layout/sections";
+@import "layout/hero";
+@import "layout/journey";
+@import "layout/awards-grid";
+@import "layout/footer";
+
+// 8. Components.
+@import "components/buttons";
+@import "components/eyebrow";
+@import "components/brand-dot";
+@import "components/cards";
+@import "components/feature-media";
+@import "components/play-button";
+@import "components/award-card";
+@import "components/accordion-faq";
+@import "components/cta";
+
+// 9. Utilities.
+@import "utilities/helpers";

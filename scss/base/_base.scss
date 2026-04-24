@@ -1,0 +1,17 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv11", "ss01", "ss03";  // Inter alt glyphs
+}
+
+// Consistent focus ring across the site - visible only for keyboard users.
+:focus-visible {
+  outline: 2px solid rgba(#fff, .9);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.section :focus-visible,
+.section-alt :focus-visible,
+.cta-pill :focus-visible {
+  outline-color: rgba($primary, .7);
+}

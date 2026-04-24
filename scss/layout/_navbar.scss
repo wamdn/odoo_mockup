@@ -1,0 +1,17 @@
+// Site nav sits on top of the blue hero - no background of its own so it
+// visually merges with the hero. When scrolling past the hero the nav is
+// out of sight anyway (this is a single-screen hero).
+.site-nav {
+  background-color: transparent;
+  position: relative;
+  z-index: 5;
+
+  // Hero wrapper provides the blue; nav links just need to be white.
+  .nav-link { color: rgba(#fff, .85); font-weight: 500; }
+  .nav-link:hover,
+  .nav-link.active { color: #fff; }
+
+  .container {
+    border-color: grey;
+  }
+}

@@ -1,0 +1,100 @@
+// Brand palette, typography, radii, spacing.
+// These override Bootstrap defaults and MUST be imported before
+// `bootstrap/scss/variables` (see main.scss for the load order).
+
+// Palette taken from the mock-up.
+$primary:        #038aff;
+$secondary:      #6C757D;
+$dark:           #0B1838;     // navy used in the dark banners / footer
+$light:          #F3F5F9;     // soft grey used as page background accents
+$success:        #1DC37A;
+$warning:        #FFB020;
+$danger:         #E6492D;
+$info:           #3DB9F5;
+
+$body-color:     #1E2340;
+$body-bg:        #FFFFFF;
+
+// Brand "deep" variant (footer card, CTA band).
+$navy:           #0B1838;
+$navy-600:       #162654;
+
+// Typography - Bootstrap's default stack with Inter at the top works well
+// with the mock-up's clean, geometric look.
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-weight: 700;
+$display-font-weight:  700;
+$font-weight-semibold: 600;
+
+$h1-font-size: 3rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 1.5rem;
+
+$display-font-sizes: (
+  1: 3.5rem,
+  2: 2.75rem,
+  3: 2.25rem,
+  4: 1.875rem,
+  5: 1.5rem,
+  6: 1.25rem
+);
+
+// Borders & radii - the mock-up uses noticeably rounded corners on cards,
+// pills on every primary button and large pills on the hero "cloud" card.
+$border-radius:       .75rem;
+$border-radius-sm:    .5rem;
+$border-radius-lg:    1rem;
+$border-radius-xl:    1.5rem;
+$border-radius-xxl:   2rem;
+$border-radius-pill:  50rem;
+
+// Buttons - rounded-pill look with a bit more vertical padding.
+$btn-padding-y:       .625rem;
+$btn-padding-x:       1.25rem;
+$btn-border-radius:       $border-radius-sm;
+$btn-border-radius-sm:    $border-radius-sm;
+$btn-border-radius-lg:    $border-radius-sm;
+$btn-font-weight:     600;
+
+// Navbar.
+$navbar-padding-y:        1rem;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-brand-font-size:   1.25rem;
+$navbar-dark-color:        rgba(#fff, .85);
+$navbar-dark-hover-color:  #fff;
+$navbar-dark-active-color: #fff;
+
+// Cards.
+$card-border-width: 0;
+$card-border-radius: $border-radius-sm;
+$card-spacer-y: 1.5rem;
+$card-spacer-x: 1.5rem;
+
+// Accordion - flat look matching the mock-up.
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-button-padding-y: 1.25rem;
+$accordion-button-padding-x: 0;
+$accordion-button-color: $body-color;
+$accordion-button-bg: transparent;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $body-color;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: none;
+$accordion-body-padding-x: 0;
+
+// Spacing - add a couple of wider spacers for hero / section padding.
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6
+);

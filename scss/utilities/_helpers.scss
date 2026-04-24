@@ -1,0 +1,11 @@
+.img-rounded {
+  border-radius: $border-radius-lg;
+  object-fit: cover;
+  width: 100%;
+}
+
+.shadow-soft { box-shadow: 0 20px 40px rgba(#0b1838, .08); }
+
+.text-success {
+  color: $success;
+}

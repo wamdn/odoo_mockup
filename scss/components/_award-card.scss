@@ -1,0 +1,67 @@
+// Award card (rendered via Bootstrap's row-cols utilities in the HTML).
+// Each card:
+//   - lives inside an <a> so it is clickable
+//   - is a horizontal RECTANGLE (wider than tall), matching the mock-up
+//   - lifts on hover, swapping the colored SVG logo for the white variant
+// The outer .awards-grid (see layout/_awards-grid.scss) handles the
+// staggered zig-zag pattern.
+.award-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  aspect-ratio: 16 / 11;
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid rgba($body-color, .08);
+  border-radius: $border-radius-lg;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+
+  img {
+    max-height: 26px;
+    max-width: 75%;
+    transition: filter .25s ease;
+  }
+
+  // Rating badge: small orange star + numeric score.
+  &__rating {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    font-size: .75rem;
+    font-weight: 600;
+    color: $body-color;
+
+    .bi-star-fill { color: $warning; font-size: .8rem; }
+  }
+
+  // Small muted caption below the logo (review count).
+  &__meta {
+    font-size: .7rem;
+    color: $secondary;
+    letter-spacing: .02em;
+  }
+
+  // Swap to the white logo variant on hover.
+  .logo-dark  { display: inline-block; }
+  .logo-light { display: none; }
+
+  &:hover,
+  &:focus-visible {
+    background: $primary;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba($primary, .3);
+    color: #fff;
+
+    .logo-dark  { display: none; }
+    .logo-light { display: inline-block; }
+
+    .award-card__rating { color: #fff; .bi-star-fill { color: #fff; } }
+    .award-card__meta   { color: rgba(#fff, .85); }
+  }
+}

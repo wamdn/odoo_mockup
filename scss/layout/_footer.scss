@@ -1,0 +1,18 @@
+.site-footer {
+  background: $navy;
+  color: rgba(#fff, .7);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+
+  a { color: rgba(#fff, .7); text-decoration: none; }
+  a:hover { color: #fff; }
+
+  h6 { color: #fff; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: .8rem; }
+
+  .footer-brand { color: #fff; }
+  .footer-bottom {
+    border-top: 1px solid rgba(#fff, .1);
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+  }
+}

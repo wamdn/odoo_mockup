@@ -1,0 +1,11 @@
+// Extends Bootstrap's $theme-colors with the brand "navy" entries so we can
+// use bg-navy, text-navy, border-navy, etc. in the HTML.
+// Must be imported AFTER `bootstrap/scss/variables` + `maps` (so $theme-colors
+// exists) and BEFORE the rest of Bootstrap (utilities, etc.).
+
+$custom-colors: (
+  "navy":    $navy,
+  "navy-600": $navy-600
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

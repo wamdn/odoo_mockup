@@ -1,0 +1,15 @@
+// "Infinite solutions" dark banner.
+.cta-banner {
+  background: $navy;
+  color: #fff;
+  border-radius: $border-radius-lg;
+  padding: 2.5rem;
+}
+
+// Final CTA pill (blue rounded panel before the footer).
+.cta-pill {
+  background: $primary;
+  color: #fff;
+  border-radius: $border-radius-pill;
+  padding: 2rem 2.5rem;
+}

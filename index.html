@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Odoo - Development done right</title>
+    <meta
+      name="description"
+      content="Build a beautiful, modern website with flexible components built from scratch."
+    />
+
+    <!-- Google font (Inter) to match the clean typographic feel of the mock-up. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons for the small glyphs (arrows, checks, stars, store badges). -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Compiled Bootstrap + project styles (see scss/custom.scss). -->
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <!-- Blue wrapper shared by the navbar and the hero so they merge into
+       one continuous area, matching the mock-up. -->
+    <div class="hero-wrapper">
+      <!-- =====================================================================
+       NAVBAR
+       - Bootstrap navbar-expand-lg collapses into a hamburger below 992px.
+       - Transparent background; the blue comes from .hero-wrapper.
+       ===================================================================== -->
+      <nav class="navbar navbar-expand-lg navbar-dark site-nav py-3">
+        <div class="container border-bottom py-3">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="assets/logos/odoo-white.svg" alt="Odoo" height="22" />
+          </a>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tools">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#technology">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#install">App</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#faq">Docs</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-3">
+              <a class="text-white text-decoration-none" href="#">Sign in</a>
+              <a class="btn btn-light fw-semibold" href="#cta">
+                <i class="bi bi-bag me-2"></i>
+                Buy now
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- =====================================================================
+       HERO
+       - Left column: eyebrow-like heading, paragraph, CTA buttons, "trusted
+         by" logo strip.
+       - Right column: floating "Manage cards" card overlapping the bottom
+         of the hero for a layered effect (handled in scss/custom.scss).
+       ===================================================================== -->
+      <header id="hero" class="hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <h1 class="fw-bold mb-4 rise-1">Development<br />done right</h1>
+              <p class="lead opacity-75 mb-4 rise-2" style="max-width: 32rem">
+                Build a beautiful, modern website with flexible components built
+                from scratch.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mb-5 rise-3">
+                <a href="#tools" class="btn btn-light btn-lg fw-semibold">
+                  Get started <i class="bi bi-plus ms-1"></i>
+                </a>
+              </div>
+
+              <p
+                class="text-uppercase small fw-semibold opacity-75 mb-3 rise-4"
+              >
+                Trusted by
+              </p>
+              <div
+                class="trusted-row d-flex flex-wrap align-items-center gap-4 rise-4"
+              >
+                <img src="assets/logos/google-white.svg" alt="Google" />
+                <img src="assets/logos/spotify.svg" alt="Spotify" />
+                <img src="assets/logos/airbnb.svg" alt="Airbnb" />
+                <img src="assets/logos/paypal.svg" alt="PayPal" />
+                <!-- <img src="assets/logos/slack.svg" alt="Slack" />
+                <img src="assets/logos/amazon.svg" alt="Amazon" /> -->
+              </div>
+            </div>
+
+            <div class="col-lg-5 offset-lg-1">
+              <!-- Manage-cards card - purely decorative, illustrates the product. -->
+              <div class="hero-card p-4 rise-5">
+                <div
+                  class="d-flex align-items-center justify-content-between mb-3"
+                >
+                  <strong>Manage cards</strong>
+                  <button href="#" class="btn btn-outline-secondary">
+                    Add new
+                  </button>
+                </div>
+
+                <div class="credit-card mb-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <span class="small opacity-75">Active</span>
+                    <i class="bi bi-wifi" style="transform: rotate(90deg)"></i>
+                  </div>
+                  <div class="small opacity-75">CARD NUMBER</div>
+                  <div class="fs-5 fw-semibold letter-spacing-1 mb-3">
+                    4358&nbsp;&nbsp;7421&nbsp;&nbsp;9256&nbsp;&nbsp;6682
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <div class="small opacity-75">NAME</div>
+                      <div class="fw-semibold">John Snow</div>
+                    </div>
+                    <div>
+                      <div class="small opacity-75">EXPIRY DATE</div>
+                      <div class="fw-semibold">11/23</div>
+                    </div>
+                    <img
+                      src="assets/logos/mastercard.svg"
+                      alt="Mastercard"
+                      height="28"
+                      class="align-self-end"
+                    />
+                  </div>
+                </div>
+
+                <div class="transaction">
+                  <span class="logo text-success"
+                    ><i class="bi bi-cup-hot-fill"></i
+                  ></span>
+                  <div class="flex-grow-1">
+                    <div class="fw-semibold">Starbucks</div>
+                    <div class="small text-muted">
+                      Pending - San Francisco, US
+                    </div>
+                  </div>
+                  <div class="fw-semibold">
+                    $5,50 <span class="text-muted small">USD</span>
+                  </div>
+                </div>
+                <div class="transaction">
+                  <span class="logo text-dark"
+                    ><i class="bi bi-bag-fill"></i
+                  ></span>
+                  <div class="flex-grow-1">
+                    <div class="fw-semibold">Nike Sports</div>
+                    <div class="small text-muted">
+                      Pending - Lisbon, Portugal
+                    </div>
+                  </div>
+                  <div class="fw-semibold">
+                    $129,00 <span class="text-muted small">USD</span>
+                  </div>
+                </div>
+
+                <a
+                  href="#"
+                  class="d-block mt-3 small text-primary text-decoration-none fw-semibold"
+                >
+                  View all <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Diagonal transition — the blue hero ends with a slanted (not
+         horizontal) edge that cuts into the white page below. In the
+         mock-up the blue extends LOWER on the RIGHT (under the hero
+         card) and ends higher on the LEFT. -->
+      <svg
+        class="hero-wave"
+        viewBox="0 0 1440 140"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <polygon points="0,20 1440,110 1440,140 0,140" fill="#ffffff" />
+      </svg>
+    </div>
+    <!-- /.hero-wrapper -->
+
+    <!-- ==========================================================================
+       "JOURNEY" BLOCK
+       Tools / Features / Technology / Install share one continuous white
+       background. A decorative dashed SVG curve snakes between the rows,
+       linking them visually — matching the mock-up. The wrapper uses
+       position: relative so the curve can be absolutely positioned on top
+       of the sections without interfering with click targets (it's marked
+       pointer-events: none + aria-hidden in the SVG).
+       ========================================================================== -->
+    <div class="journey position-relative">
+      <!-- Decorative dashed connector. Drawn behind content via z-index: 0 and
+       ignored by the pointer (pointer-events: none). -->
+      <svg
+        class="journey-connector"
+        viewBox="0 0 1440 2400"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <!-- Zig-zag path: right side of Tools image, curving down to the left
+         edge of the Features image, back to the right below Technology,
+         then to the left before Install. Semi-circle arcs. -->
+        <path
+          d="M 360 180
+             C 900 180, 1100 420, 1080 600
+             C 1060 820, 300 780, 320 1100
+             C 340 1380, 1100 1340, 1080 1650
+             C 1060 1920, 360 1900, 360 2200"
+          fill="none"
+          stroke="#ADB5BD"
+          stroke-width="2"
+          stroke-dasharray="6 8"
+          stroke-linecap="round"
+          opacity="0.7"
+        />
+      </svg>
+
+      <!-- =====================================================================
+       TOOLS
+       Uses .section--after-hero so the overlapping hero card sits cleanly
+       above this section.
+       ===================================================================== -->
+      <section id="tools" class="section section--after-hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img
+                src="assets/img/img_01.jpg"
+                alt="Team of designers and developers collaborating"
+                class="img-rounded shadow-soft"
+              />
+            </div>
+            <div class="col-lg-6">
+              <span class="eyebrow eyebrow--orange mb-3">Tools</span>
+              <h2 class="display-5 fw-bold mt-3 mb-3">
+                We build for designers and developers
+              </h2>
+              <p class="text-muted mb-4" style="max-width: 32rem">
+                Get components and examples, including tons of variables that
+                will help you grow your business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+       FEATURES - with the "Awesome projects" task card floating over the
+       image on the left column. No background change from Tools: the whole
+       "journey" block shares one continuous white background.
+       ===================================================================== -->
+      <section class="section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- order-lg-2 puts the image column on the RIGHT on lg+ so the
+             page alternates image-left / image-right between sections. -->
+            <div class="col-lg-6 order-lg-2">
+              <!-- Image + play button + floating task card -->
+              <div class="feature-media feature-media--right position-relative">
+                <img
+                  src="assets/img/img_02.jpg"
+                  alt="Designer at work"
+                  class="img-rounded shadow-soft"
+                />
+
+                <a
+                  href="#"
+                  class="play-button position-absolute top-50 start-50 translate-middle text-decoration-none"
+                  aria-label="Play video"
+                >
+                  <i class="bi bi-play-fill fs-2"></i>
+                </a>
+
+                <span
+                  class="position-absolute bottom-0 start-0 m-3 bg-white text-dark rounded-pill px-3 py-2 small fw-semibold shadow-sm"
+                >
+                  <i class="bi bi-play-circle-fill text-primary me-1"></i> Play
+                  video
+                </span>
+
+                <!-- Task card overlaps the right edge of the image on lg+. -->
+                <div class="project-card p-4 feature-media__card">
+                  <div class="fw-semibold mb-3">Awesome projects</div>
+                  <div class="task-row">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="check done"></span>
+                      <span class="fw-semibold">Create the new logo</span>
+                    </div>
+                    <span class="text-muted small">3:50</span>
+                  </div>
+                  <div class="task-row">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="check done"></span>
+                      <span class="fw-semibold">Set up the color palette</span>
+                    </div>
+                    <span class="text-muted small">4:00</span>
+                  </div>
+                  <div class="task-row">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="check"></span>
+                      <span class="fw-semibold">Wireframe and prototype</span>
+                    </div>
+                    <span class="text-muted small">6:50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 order-lg-1">
+              <span class="eyebrow eyebrow--green mb-3">Features</span>
+              <h2 class="display-5 fw-bold mt-3 mb-3">
+                Awesome projects for creative teams
+              </h2>
+              <p class="text-muted mb-4">
+                Get components and examples, including tons of variables that
+                will help you grow your business.
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-start gap-2 mb-2">
+                  <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                  Perfect for modern startups
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                  Fully customizable and scalable
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+       TECHNOLOGY (part of the "journey" block - same white background).
+       ===================================================================== -->
+      <section id="technology" class="section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+              <!-- Large portrait with testimonial card overlapping the top. -->
+              <div class="tech-media position-relative">
+                <img
+                  src="assets/img/person_02.jpg"
+                  alt="Happy customer"
+                  class="img-rounded shadow-soft tech-media__image"
+                />
+                <div class="testimonial-card tech-media__card p-4">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <img
+                      src="assets/img/person_03.jpg"
+                      alt="Jimmy Hendrix"
+                      class="avatar"
+                    />
+                    <div>
+                      <div class="fw-semibold">Jimmy Hendrix</div>
+                      <div class="small text-muted">Website UI Kit</div>
+                    </div>
+                  </div>
+                  <div class="fw-semibold">300+ components</div>
+                  <p class="text-muted small mb-2">Built to be customized.</p>
+                  <div class="stars small">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="text-muted ms-2">4.95 / 5 · 23 reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-1">
+              <span class="eyebrow eyebrow--blue mb-3">Technology</span>
+              <h2 class="display-5 fw-bold mt-3 mb-3">
+                We use the latest technologies on the market
+              </h2>
+              <p class="text-muted mb-4" style="max-width: 32rem">
+                Get components and examples, including tons of variables that
+                will help you grow your business.
+              </p>
+              <a href="#" class="fw-semibold text-primary text-decoration-none">
+                See case studies <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+       EASY TO INSTALL (final section of the "journey" block).
+       ===================================================================== -->
+      <section id="install" class="section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <span class="eyebrow mb-3">Easy to install</span>
+              <h2 class="display-5 fw-bold mt-3 mb-3">
+                Download, install and run.
+              </h2>
+              <p class="text-muted mb-4" style="max-width: 32rem">
+                Get components and examples, including tons of variables that
+                will help you grow your business.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a
+                  href="#"
+                  class="btn btn-dark btn-lg d-inline-flex align-items-center gap-2"
+                >
+                  <i class="bi bi-apple fs-4"></i>
+                  <span class="text-start lh-1">
+                    <small class="d-block opacity-75">Download on the</small>
+                    <strong>App Store</strong>
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-dark btn-lg d-inline-flex align-items-center gap-2"
+                >
+                  <i class="bi bi-google-play fs-5"></i>
+                  <span class="text-start lh-1">
+                    <small class="d-block opacity-75">Download on the</small>
+                    <strong>Play Store</strong>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="assets/img/img_03.jpg"
+                alt="People enjoying the app"
+                class="img-rounded shadow-soft"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /.journey -->
+
+    <!-- =====================================================================
+       INFINITE SOLUTIONS BANNER
+       ===================================================================== -->
+    <section class="py-5">
+      <div class="container">
+        <div
+          class="cta-banner d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4"
+        >
+          <div class="d-flex align-items-center gap-3">
+            <img
+              src="assets/img/company_01.png"
+              alt=""
+              height="40"
+              class="flex-shrink-0"
+              aria-hidden="true"
+            />
+            <div>
+              <h3 class="h4 fw-bold mb-2">Infinite solutions</h3>
+              <p class="mb-0 opacity-75">
+                Intuitive markup, powerful and lightning-fast build tools,
+                everything you need to turn your ideas into incredible products.
+              </p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary btn-lg flex-shrink-0">
+            Learn more <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diagonal transition: white banner area -> grey Awards section. -->
+    <svg
+      class="section-wave"
+      viewBox="0 0 1440 70"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <polygon points="0,10 1440,55 1440,70 0,70" fill="#F3F5F9" />
+    </svg>
+
+    <!-- =====================================================================
+       AWARDS
+       5 clickable cards. Hover swaps to colored bg + white logo.
+       row-cols-* utilities generate 2 columns on mobile, 5 on desktop.
+       ===================================================================== -->
+    <section id="awards" class="section section-alt">
+      <div class="container text-center">
+        <span class="eyebrow eyebrow--blue mb-3">Awards</span>
+        <h2 class="display-5 fw-bold mt-3 mb-3">
+          Awards for design, creativity,<br class="d-none d-md-inline" />
+          and innovation on the Internet
+        </h2>
+        <p class="text-muted mb-5">4.95 out of 5 stars from 23 reviews</p>
+
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 g-lg-4 mb-5 awards-grid"
+        >
+          <div class="col">
+            <a href="#" class="award-card" aria-label="Airbnb award">
+              <div class="award-card__rating">
+                <i class="bi bi-star-fill"></i>
+                <span>4.95</span>
+              </div>
+              <img
+                src="assets/logos/airbnb.svg"
+                alt="Airbnb"
+                class="logo-dark"
+              />
+              <img
+                src="assets/logos/airbnb-white.svg"
+                alt=""
+                class="logo-light"
+                aria-hidden="true"
+              />
+              <div class="award-card__meta">23 reviews</div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="award-card" aria-label="Amazon award">
+              <div class="award-card__rating">
+                <i class="bi bi-star-fill"></i>
+                <span>4.95</span>
+              </div>
+              <img
+                src="assets/logos/amazon.svg"
+                alt="Amazon"
+                class="logo-dark"
+              />
+              <img
+                src="assets/logos/amazon.svg"
+                alt=""
+                class="logo-light"
+                aria-hidden="true"
+                style="filter: brightness(0) invert(1)"
+              />
+              <div class="award-card__meta">23 reviews</div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="award-card" aria-label="Slack award">
+              <div class="award-card__rating">
+                <i class="bi bi-star-fill"></i>
+                <span>4.95</span>
+              </div>
+              <img src="assets/logos/slack.svg" alt="Slack" class="logo-dark" />
+              <img
+                src="assets/logos/slack.svg"
+                alt=""
+                class="logo-light"
+                aria-hidden="true"
+                style="filter: brightness(0) invert(1)"
+              />
+              <div class="award-card__meta">23 reviews</div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="award-card" aria-label="PayPal award">
+              <div class="award-card__rating">
+                <i class="bi bi-star-fill"></i>
+                <span>4.95</span>
+              </div>
+              <img
+                src="assets/logos/paypal.svg"
+                alt="PayPal"
+                class="logo-dark"
+              />
+              <img
+                src="assets/logos/paypal-white.svg"
+                alt=""
+                class="logo-light"
+                aria-hidden="true"
+              />
+              <div class="award-card__meta">23 reviews</div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="award-card" aria-label="Spotify award">
+              <div class="award-card__rating">
+                <i class="bi bi-star-fill"></i>
+                <span>4.95</span>
+              </div>
+              <img
+                src="assets/logos/spotify.svg"
+                alt="Spotify"
+                class="logo-dark"
+              />
+              <img
+                src="assets/logos/spotify-white.svg"
+                alt=""
+                class="logo-light"
+                aria-hidden="true"
+              />
+              <div class="award-card__meta">23 reviews</div>
+            </a>
+          </div>
+        </div>
+
+        <blockquote class="mx-auto" style="max-width: 42rem">
+          <p class="h4 fw-semibold text-dark">
+            "They build modern-looking websites easily using Tabs."
+          </p>
+          <footer class="text-muted mt-3">- Happy customer</footer>
+        </blockquote>
+        <a href="#" class="fw-semibold text-primary text-decoration-none">
+          Learn more <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Diagonal transition: grey Awards -> white FAQ section. -->
+    <svg
+      class="section-wave"
+      viewBox="0 0 1440 70"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <polygon points="0,55 1440,10 1440,70 0,70" fill="#ffffff" />
+    </svg>
+
+    <!-- =====================================================================
+       HELPFUL ANSWERS (accordion)
+       Uses Bootstrap's .accordion with data-bs-parent so only one panel
+       can be open at a time. Flush styling is defined in SCSS.
+       ===================================================================== -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="eyebrow mb-3">Helpful answers</span>
+            <h2 class="display-5 fw-bold mt-3 mb-3">
+              Start building fast, beautiful, and modern-looking websites in no
+              time.
+            </h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush faq" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q1"
+                    aria-expanded="false"
+                    aria-controls="q1"
+                  >
+                    Which license do I need?
+                  </button>
+                </h3>
+                <div
+                  id="q1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Pick the license that matches how you intend to ship:
+                    personal projects run fine on the free tier, while
+                    production deployments with end customers should use the
+                    business license.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q2"
+                    aria-expanded="false"
+                    aria-controls="q2"
+                  >
+                    How do I get access to my database?
+                  </button>
+                </h3>
+                <div
+                  id="q2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Database credentials are generated automatically and
+                    delivered to you by email once your environment is ready.
+                    You can also find them any time in your account dashboard.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q3"
+                    aria-expanded="false"
+                    aria-controls="q3"
+                  >
+                    How do I see previous orders?
+                  </button>
+                </h3>
+                <div
+                  id="q3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Sign in to your account and open the Billing tab - all past
+                    invoices and their downloadable PDF versions are listed
+                    there.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+       CTA PILL
+       ===================================================================== -->
+    <section id="cta" class="section pt-0">
+      <div class="container">
+        <div
+          class="cta-pill text-white d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4"
+        >
+          <h3 class="h4 fw-semibold mb-0">I want to start a new project.</h3>
+          <div class="d-flex gap-3 flex-shrink-0">
+            <a href="#" class="btn btn-light fw-semibold">Buy now</a>
+            <a href="#" class="btn btn-outline-light fw-semibold">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 align-items-center mb-5">
+          <div class="col-lg-6">
+            <h3 class="footer-brand h4 fw-bold mb-2">
+              Brilliant solutions for your ideas
+            </h3>
+            <p class="mb-0 opacity-75">Modern-looking websites.</p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a href="#" class="btn btn-outline-light me-2">Documentation</a>
+            <a href="#" class="btn btn-primary fw-semibold">Purchase now</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <img
+              src="assets/logos/odoo-white.svg"
+              alt="Odoo"
+              height="24"
+              class="mb-3"
+            />
+            <p class="small opacity-75" style="max-width: 22rem">
+              Odoo attempts to bring the best development experience to
+              designers and developers by offering the tools needed for having a
+              quick and solid start in most web projects.
+            </p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 offset-lg-2">
+            <h6 class="mb-3">Account</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="#">Profile</a></li>
+              <li class="mb-2"><a href="#">Settings</a></li>
+              <li class="mb-2"><a href="#">Billing</a></li>
+              <li><a href="#">Notifications</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="mb-3">About</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="#">Services</a></li>
+              <li class="mb-2"><a href="#">Pricing</a></li>
+              <li class="mb-2"><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="mb-3">Company</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="#">Community</a></li>
+              <li class="mb-2"><a href="#">Help center</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 small"
+        >
+          <div class="opacity-75">&copy; Odoo. All rights reserved.</div>
+          <div class="d-flex gap-3">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap bundle provides the collapse (hamburger) and accordion
+       behaviors - no custom JS needed. -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+// Visually glue nav + hero: the nav lives INSIDE the hero section. The
+// wrapper owns the blue background and the decorative wave at the bottom.
+// Extras for polish: a subtle radial spotlight and a grain/noise layer
+// that sit OVER the background but UNDER the content.
+.hero-wrapper {
+  background-color: $primary;
+  // background: linear-gradient(135deg, #3D6BFF 0%, #2F5BEA 60%, #274DDB 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -20% -10% 0 -10%;
+    background:
+      radial-gradient(60% 55% at 15% 10%, rgba(#89A9FF, .35), transparent 70%),
+      radial-gradient(45% 40% at 95% 0%,  rgba(#B6C9FF, .25), transparent 65%);
+    pointer-events: none;
+  }
+
+  // SVG-encoded monochrome noise (crisp, no extra network request).
+  // Low opacity so it only adds surface "grain" at close viewing.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity: .06;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  > * { position: relative; z-index: 1; }
+}
+
+// SVG wave that transitions the blue hero into the white page below.
+// - The SVG uses preserveAspectRatio="none" so it stretches the full width.
+// - Height scales with the viewport (smaller on mobile).
+// - `display: block` removes the inline-element whitespace under the SVG.
+// - `scaleX(-1)` mirrors the wave horizontally.
+.hero-wave {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: -1px;   // avoid a 1px seam in some browsers
+  transform: scaleX(-1);
+
+  @include media-breakpoint-up(md) { height: 90px; }
+  @include media-breakpoint-up(lg) { height: 140px; }
+}
+
+// The hero's blue area ends cleanly; the hero card uses a negative bottom
+// margin on lg+ screens so it overlaps the boundary with the next section
+// (creating the layered "floating" effect visible in the mock-up).
+.hero {
+  color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .btn-outline-light {
+    --bs-btn-border-width: 2px;
+  }
+}
+
+.hero-card {
+  color: $body-color;
+  background: #fff;
+  border-radius: $border-radius-xl;
+  // Two-layer shadow: tight inner for definition + soft outer for depth.
+  box-shadow:
+    0 2px 6px  rgba(#0b1838, .08),
+    0 30px 70px rgba(#0b1838, .22);
+  // Thin hairline border catches light against the blue gradient.
+  border: 1px solid rgba(#fff, .7);
+
+  // Poke into the next section on larger screens for the layered look.
+  @include media-breakpoint-up(lg) {
+    margin-bottom: -6rem;
+  }
+
+  .credit-card {
+    background: linear-gradient(135deg, $navy 0%, #1A2E6D 100%);
+    color: #fff;
+    border-radius: $border-radius-lg;
+    padding: 1rem 1.25rem;
+    font-feature-settings: "tnum";
+  }
+
+  .transaction {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .75rem 0;
+    border-top: 1px solid rgba($body-color, .08);
+
+    &:first-of-type { border-top: 0; }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: $light;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+  }
+}
+
+// "Trusted by" logo row - uses SVGs tinted via filter so they look uniform
+// on the blue hero background.
+.trusted-row img {
+  height: 22px;
+  filter: brightness(0) invert(1);
+  opacity: .85;
+}

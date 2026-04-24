@@ -1,0 +1,32 @@
+// Small eyebrow label used above every section heading.
+.eyebrow {
+  display: inline-block;
+  font-size: .875rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: $primary;
+  background-color: rgba($primary, .08);
+  border-radius: $border-radius-pill;
+  padding: .35rem .9rem;
+}
+
+.eyebrow--light {
+  background-color: rgba(#fff, .15);
+}
+
+.eyebrow--orange {
+  background-color: $warning;
+}
+
+.eyebrow--green {
+  background-color: $success;
+}
+
+.eyebrow--blue {
+  background-color: $primary;
+}
+
+.eyebrow--light, .eyebrow--orange, .eyebrow--green, .eyebrow--blue {
+  color: #fff;
+}

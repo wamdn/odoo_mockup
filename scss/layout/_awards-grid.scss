@@ -1,0 +1,11 @@
+// Staggered zig-zag: on lg+, push the EVEN cards down so the row reads
+// high-low-high-low-high across the 5 awards. Stack straight on mobile.
+.awards-grid {
+  @include media-breakpoint-up(lg) {
+    align-items: flex-start;
+
+    > .col:nth-child(even) {
+      margin-top: 2.5rem;
+    }
+  }
+}

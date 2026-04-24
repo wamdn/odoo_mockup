@@ -1,0 +1,14 @@
+// Tactile button feel: subtle translateY + soft shadow on hover.
+.btn {
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}
+.btn-light:hover  { box-shadow: 0 10px 24px rgba(#0b1838, .18); }
+.btn-primary:hover{ box-shadow: 0 12px 26px rgba($primary, .35); }
+.btn-dark:hover   { box-shadow: 0 12px 26px rgba(#000, .25); }
