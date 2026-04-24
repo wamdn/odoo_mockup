@@ -13303,8 +13303,8 @@ body {
 .cta-banner {
   background: #0B1838;
   color: #fff;
-  border-radius: 1rem;
-  padding: 2.5rem;
+  border-radius: 0 4rem 0;
+  padding: 5rem;
 }
 
 .cta-pill {
@@ -13326,6 +13326,34 @@ body {
 
 .text-success {
   color: #1DC37A;
+}
+
+.triangle-top {
+  position: relative;
+}
+
+.triangle-top:before {
+  content: "";
+  background-color: inherit;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  top: -1.3rem;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 50%);
+  position: absolute;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .triangle-top:before {
+    height: 5rem;
+    top: -2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .triangle-top:before {
+    height: 10rem;
+    top: -5rem;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
