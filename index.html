@@ -229,17 +229,17 @@
     <div class="journey position-relative">
       <!-- Decorative dashed connector. Drawn behind content via z-index: 0 and
        ignored by the pointer (pointer-events: none). -->
-      <svg
+      <!-- <svg
         class="journey-connector"
         viewBox="0 0 1440 2400"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
-      >
+      > -->
         <!-- Zig-zag path: right side of Tools image, curving down to the left
          edge of the Features image, back to the right below Technology,
          then to the left before Install. Semi-circle arcs. -->
-        <path
+        <!-- <path
           d="M 360 180
              C 900 180, 1100 420, 1080 600
              C 1060 820, 300 780, 320 1100
@@ -247,12 +247,51 @@
              C 1060 1920, 360 1900, 360 2200"
           fill="none"
           stroke="#ADB5BD"
-          stroke-width="2"
+          stroke-width="3"
           stroke-dasharray="6 8"
           stroke-linecap="round"
-          opacity="0.7"
+          opacity="0.3"
         />
+      </svg> -->
+
+      <!-- <svg class="journey-connector" viewBox="0 0 1440 2400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 1080 180
+                C 540 180, 340 420, 360 600
+                C 380 820, 1140 780, 1120 1100
+                C 1100 1380, 340 1340, 360 1650
+                C 380 1920, 1080 1900, 1080 2200" 
+              fill="none" stroke="#ADB5BD" stroke-width="3" stroke-dasharray="6 8" stroke-linecap="round" opacity="0.3"></path>
+      </svg> -->
+
+      <!-- <svg class="journey-connector" viewBox="0 0 1440 2400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 1080 180
+                C 540 180, 340 420, 360 600
+                C 380 820, 1140 780, 1120 1100
+                C 1100 1380, 340 1340, 360 1650
+                C 380 1920, 1080 1900, 1080 2200" 
+              fill="none" stroke="#ADB5BD" stroke-width="3" stroke-dasharray="6 8" stroke-linecap="round" opacity="0.3"></path>
+      </svg> -->
+
+      <!-- <svg class="journey-connector" xmlns="http://www.w3.org/2000/svg" width="1440" height="2400" aria-hidden="true" preserveAspectRatio="none" class="journey-connector">
+      <g>
+        <title>Layer 1</title>
+        <path transform="rotate(-180 720 1190)" stroke="#ADB5BD" id="svg_1" opacity="0.3" stroke-linecap="round" stroke-dasharray="6 8" stroke-width="3" fill="none" d="m921.91882,180c-320.24014,0 -438.84761,240 -426.98686,420c11.86075,220 462.5691,180 450.70835,500c-11.86075,280 -462.5691,240 -450.70835,550c11.86075,270 426.98686,250 426.98686,550"/>
+      </g>
+      </svg> -->
+
+
+      <svg class="journey-connector" xmlns="http://www.w3.org/2000/svg" width="1440" height="2400" aria-hidden="true" preserveAspectRatio="none" class="journey-connector">
+      <g>
+        <title>Layer 1</title>
+        <path transform="rotate(-180 720 1289.5)" stroke="#ADB5BD" id="svg_1" opacity="0.3" stroke-linecap="round" stroke-dasharray="6 8" stroke-width="3" fill="none" d="m921.9187,180.00011c-320.24014,0 -438.84761,263.64355 -426.98686,461.37621c11.86075,241.67325 462.5691,197.73266 450.70835,549.2574c-11.86075,307.58414 -462.5691,263.64355 -450.70835,604.18314c11.86075,296.59899 426.98686,274.6287 426.98686,604.18314"/>
+      </g>
       </svg>
+
+
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="160" height="170" aria-hidden="true" class="journey-connector">
+        <path d="M3 167C3 167 118 134.4 156 2" fill="none" stroke="#ADB5BD" opacity="0.3" stroke-width="3" stroke-dasharray="6 8"/>
+      </svg> -->
+
 
       <!-- =====================================================================
        TOOLS
@@ -344,7 +383,7 @@
        image on the left column. No background change from Tools: the whole
        "journey" block shares one continuous white background.
        ===================================================================== -->
-      <section class="section">
+      <section class="section journey-section-connector">
         <div class="container">
           <div class="row align-items-center g-5">
             <!-- order-lg-2 puts the image column on the RIGHT on lg+ so the
@@ -437,11 +476,85 @@
       <!-- =====================================================================
        TECHNOLOGY (part of the "journey" block - same white background).
        ===================================================================== -->
-      <section id="technology" class="section">
+      <section id="technology" class="section journey-tech">
         <div class="container">
           <div class="row align-items-center g-5">
-            <div class="col-lg-5">
-              <!-- Large portrait with testimonial card overlapping the top. -->
+
+            <!-- LEFT -->
+            <div class="col-md-6 col-lg-3">
+              <div class="journey-tech__column d-flex flex-column gap-4">
+
+                <!-- Profile card -->
+                <div class="journey-tech__card journey-tech__card--profile card overflow-hidden">
+                  <img src="assets/img/person_03.jpg" class="journey-tech__image" alt="profile">
+
+                  <div class="journey-tech__card-footer d-flex align-items-center p-3">
+                    <div class="journey-tech__avatar me-2">JH</div>
+                    <div class="flex-grow-1 fw-medium">Jimmy Hendrix</div>
+                    <i class="bi bi-heart journey-tech__icon"></i>
+                  </div>
+                </div>
+
+                <!-- Components -->
+                <div class="journey-tech__card journey-tech__card--small card p-3 d-flex flex-row align-items-center">
+                    <div class="journey-tech__icon-check me-2">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="">
+                      <h6 class="mb-0 fw-semibold">300+ components</h6>
+                      <small class="text-muted">Built to be customized.</small>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- MIDDLE -->
+            <div class="col-md-6 col-lg-3">
+              <div class="journey-tech__column d-flex flex-column gap-4">
+
+                <!-- Rating -->
+                <div class="journey-tech__card journey-tech__card--rating card p-4 py-md-5 gap-3 text-center">
+                  <img class="w-50 align-self-center" src="assets/logos/airbnb.svg" alt="airbnb">
+
+                  <div class="journey-tech__stars mb-2">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star text-black-50"></i>
+                  </div>
+
+                  <strong>4.95 out of 5 stars</strong>
+                  <small class="text-muted d-block">from 23 reviews</small>
+                </div>
+
+                <!-- UI kit -->
+                <div class="journey-tech__card journey-tech__card--ui card p-4 text-center">
+                  <div class="journey-tech__logo mb-2">
+                    <img class="rounded-circle" src="assets/img/company_01.png" alt="the company logo"> 
+                  </div>
+
+                  <p class="mb-3 fw-medium">Website UI Kit</p>
+
+                  <div class="d-flex justify-content-center mb-3">
+                    <img src="assets/img/person_01.jpg" class="journey-tech__avatar-sm">
+                    <img src="assets/img/person_02.jpg" class="journey-tech__avatar-sm">
+                    <img src="assets/img/person_03.jpg" class="journey-tech__avatar-sm">
+                  </div>
+                  <hr class="w-25 align-self-center">
+                  <div class="d-flex justify-content-center gap-3 text-muted">
+                    <i class="bi bi-paperclip"></i>
+                    <i class="bi bi-eye"></i>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Large portrait with testimonial card overlapping the top. -->
+            <!-- <div class="col-lg-5">
               <div class="tech-media position-relative">
                 <img
                   src="assets/img/person_02.jpg"
@@ -472,9 +585,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="col-lg-6 offset-lg-1">
+            <div class="col-lg-6">
               <span class="eyebrow eyebrow--blue mb-3">Technology</span>
               <h2 class="display-5 fw-bold mt-3 mb-3">
                 We use the latest technologies on the market
@@ -483,8 +596,8 @@
                 Get components and examples, including tons of variables that
                 will help you grow your business.
               </p>
-              <a href="#" class="fw-semibold text-primary text-decoration-none">
-                See case studies <i class="bi bi-arrow-right"></i>
+              <a href="#" class="fw-semibold text-primary text-decoration-none btn btn-underline-primary">
+                See case studies 
               </a>
             </div>
           </div>
