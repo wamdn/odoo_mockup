@@ -53,8 +53,8 @@ $border-radius-xxxl:   4rem;
 $border-radius-pill:  50rem;
 
 // Buttons - rounded-pill look with a bit more vertical padding.
-$btn-padding-y:       .625rem;
-$btn-padding-x:       1.25rem;
+$btn-padding-y:       .625em;
+$btn-padding-x:       1.25em;
 $btn-border-radius:       $border-radius-sm;
 $btn-border-radius-sm:    $border-radius-sm;
 $btn-border-radius-lg:    $border-radius-sm;
@@ -75,17 +75,17 @@ $card-spacer-y: 1.5rem;
 $card-spacer-x: 1.5rem;
 
 // Accordion - flat look matching the mock-up.
-$accordion-border-width: 0;
-$accordion-border-radius: 0;
-$accordion-button-padding-y: 1.25rem;
-$accordion-button-padding-x: 0;
+$accordion-border-width: 1px;
+// $accordion-border-radius: 0;
+$accordion-button-padding-y: 2rem;
+$accordion-button-padding-x: 1.5rem;
 $accordion-button-color: $body-color;
 $accordion-button-bg: transparent;
 $accordion-button-active-bg: transparent;
 $accordion-button-active-color: $body-color;
 $accordion-button-focus-border-color: transparent;
 $accordion-button-focus-box-shadow: none;
-$accordion-body-padding-x: 0;
+// $accordion-body-padding-x: 0;
 
 // Spacing - add a couple of wider spacers for hero / section padding.
 $spacer: 1rem;

@@ -4,8 +4,8 @@
   "description": "Static HTML replica of the Odoo design mock-up built with Bootstrap 5.3 and SCSS.",
   "private": true,
   "scripts": {
-    "build:css": "sass --load-path=node_modules scss/main.scss css/custom.css --style=compressed --no-source-map",
-    "watch:css": "sass --load-path=node_modules --watch scss/main.scss:css/custom.css",
+    "build:css": "sass --load-path=node_modules scss/main.scss css/style.css --style=compressed --no-source-map",
+    "watch:css": "sass --load-path=node_modules --watch scss/main.scss:css/style.css",
     "serve": "npx --yes http-server -p 8080 -c-1 .",
     "build": "npm run build:css"
   },
