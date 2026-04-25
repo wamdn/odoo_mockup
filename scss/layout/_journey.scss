@@ -20,3 +20,35 @@
 
 // Ensure section contents sit above the connector line.
 .journey > section { position: relative; z-index: 1; }
+
+// TODO: refactor
+.btn-play {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 2rem;
+  padding: 0 0.85rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #3e4a67;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(13, 24, 58, 0.12);
+
+  i {
+    color: #3e4a67;
+    font-size: 0.8rem;
+  }
+}
+
+.btn-play--bottom-left {
+  bottom: 0.9rem;
+  left: 0.9rem;
+  right: auto;
+  top: auto;
+}

@@ -13013,22 +13013,7 @@ body {
   z-index: 1;
 }
 
-.journey-tools .journey-tools__row {
-  --bs-gutter-y: 3rem;
-  --bs-gutter-x: 4.75rem;
-}
-.journey-tools .journey-tools__media {
-  position: relative;
-}
-.journey-tools .journey-tools__image-wrap {
-  position: relative;
-  z-index: 2;
-}
-.journey-tools .journey-tools__image {
-  border-radius: 0.65rem;
-  width: 100%;
-}
-.journey-tools .journey-tools__play {
+.btn-play {
   position: absolute;
   top: 0.9rem;
   right: 0.9rem;
@@ -13040,15 +13025,34 @@ body {
   border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.9);
   color: #3e4a67;
-  font-size: 0.69rem;
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
   box-shadow: 0 6px 18px rgba(13, 24, 58, 0.12);
 }
-.journey-tools .journey-tools__play i {
+.btn-play i {
   color: #3e4a67;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
+}
+
+.btn-play--bottom-left {
+  bottom: 0.9rem;
+  left: 0.9rem;
+  right: auto;
+  top: auto;
+}
+
+.journey-tools .journey-tools__media {
+  position: relative;
+}
+.journey-tools .journey-tools__image-wrap {
+  position: relative;
+  z-index: 2;
+}
+.journey-tools .journey-tools__image {
+  border-radius: 0.65rem;
+  width: 100%;
 }
 .journey-tools .journey-tools__card {
   position: relative;
@@ -13111,20 +13115,43 @@ body {
   .journey-tools .journey-tools__media {
     margin-left: 0.2rem;
     margin-top: 5rem;
-    min-height: 24rem;
   }
   .journey-tools .journey-tools__image-wrap {
     position: absolute;
-    top: -5rem;
-    right: -2rem;
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 60%);
     width: min(100%, 18rem);
   }
   .journey-tools .journey-tools__card {
     margin-top: 2.85rem;
     max-width: 31rem;
     padding-top: 2.1rem;
-    padding-right: 6rem;
+    padding-right: 7rem;
     margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .journey-tools .journey-tools__media {
+    margin-left: 0.2rem;
+    margin-top: 5rem;
+  }
+  .journey-tools .journey-tools__image-wrap {
+    bottom: auto;
+    right: auto;
+    transform: none;
+    top: -3rem;
+    right: 0.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  .journey-tools .journey-tools__media {
+    margin-left: 0.2rem;
+    margin-top: 5rem;
+  }
+  .journey-tools .journey-tools__image-wrap {
+    top: -3rem;
+    right: 3rem;
   }
 }
 @media (max-width: 991.98px) {
