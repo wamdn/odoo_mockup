@@ -280,12 +280,12 @@
       </svg> -->
 
 
-      <svg class="journey-connector" xmlns="http://www.w3.org/2000/svg" width="1440" height="2400" aria-hidden="true" preserveAspectRatio="none" class="journey-connector">
+      <!-- <svg class="journey-connector" xmlns="http://www.w3.org/2000/svg" width="1440" height="2400" aria-hidden="true" preserveAspectRatio="none" class="journey-connector">
       <g>
         <title>Layer 1</title>
         <path transform="rotate(-180 720 1289.5)" stroke="#ADB5BD" id="svg_1" opacity="0.3" stroke-linecap="round" stroke-dasharray="6 8" stroke-width="3" fill="none" d="m921.9187,180.00011c-320.24014,0 -438.84761,263.64355 -426.98686,461.37621c11.86075,241.67325 462.5691,197.73266 450.70835,549.2574c-11.86075,307.58414 -462.5691,263.64355 -450.70835,604.18314c11.86075,296.59899 426.98686,274.6287 426.98686,604.18314"/>
       </g>
-      </svg>
+      </svg> -->
 
 
       <!-- <svg xmlns="http://www.w3.org/2000/svg" width="160" height="170" aria-hidden="true" class="journey-connector">
@@ -355,7 +355,7 @@
                   />
                   <a
                     href="#"
-                    class="btn-play"
+                    class="btn-play btn-play--right"
                     aria-label="Play video"
                   >
                     Play video
@@ -383,7 +383,7 @@
        image on the left column. No background change from Tools: the whole
        "journey" block shares one continuous white background.
        ===================================================================== -->
-      <section class="section journey-section-connector">
+      <section class="section journey-section-connector journey-section-connector--reverse">
         <div class="container">
           <div class="row align-items-center g-5">
             <!-- order-lg-2 puts the image column on the RIGHT on lg+ so the
@@ -399,7 +399,7 @@
 
                 <a
                   href="#"
-                  class="btn-play btn-play--bottom-left"
+                  class="btn-play"
                   aria-label="Play video"
                 >
                   Play video
@@ -476,7 +476,7 @@
       <!-- =====================================================================
        TECHNOLOGY (part of the "journey" block - same white background).
        ===================================================================== -->
-      <section id="technology" class="section journey-tech">
+      <section id="technology" class="section journey-tech journey-section-connector">
         <div class="container">
           <div class="row align-items-center g-5">
 
@@ -607,7 +607,7 @@
       <!-- =====================================================================
        EASY TO INSTALL (final section of the "journey" block).
        ===================================================================== -->
-      <section id="install" class="section">
+      <section id="install" class="section journey-section-connector journey-section-connector--reverse">
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-6">
@@ -643,11 +643,21 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <img
-                src="assets/img/img_03.jpg"
-                alt="People enjoying the app"
-                class="img-rounded shadow-soft"
-              />
+              <div class="position-relative">
+                <img
+                  src="assets/img/img_03.jpg"
+                  alt="People enjoying the app"
+                  class="img-rounded shadow-soft"
+                />
+                <a
+                  href="#"
+                  class="btn-play"
+                  aria-label="Play video"
+                >
+                  Play video
+                  <i class="bi bi-play-fill" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -658,7 +668,7 @@
     <!-- =====================================================================
        INFINITE SOLUTIONS BANNER
        ===================================================================== -->
-    <section class="py-5">
+    <section class="py-5 journey-section-connector">
       <div class="container">
         <div
           class="cta-banner d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4"
@@ -839,7 +849,7 @@
 
     <!-- =====================================================================
        HELPFUL ANSWERS (accordion)
-       Uses Bootstrap's .accordion with data-bs-parent so only one panel
+       Uses Bootstrap's .accordion with data-bs-parents so only one panel
        can be open at a time. Flush styling is defined in SCSS.
        ===================================================================== -->
     <section id="faq" class="section">
@@ -860,7 +870,7 @@
               <div class="accordion-item mt-4 rounded-2">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button rounded-2"
+                    class="accordion-button rounded-2 collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseAOne"
@@ -873,8 +883,8 @@
                 </h2>
                 <div
                   id="collapseAOne"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#faqAccordionA"
+                  class="accordion-collapse collapse"
+                  data-bs-parents="#faqAccordionA"
                 >
                   <div class="accordion-body">
                     <strong>This is the first item’s accordion body.</strong> It
@@ -906,7 +916,7 @@
                 <div
                   id="collapseATwo"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordionA"
+                  data-bs-parents="#faqAccordionA"
                 >
                   <div class="accordion-body">
                     <strong>This is the second item’s accordion body.</strong>
@@ -938,7 +948,7 @@
                 <div
                   id="collapseAThree"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordionA"
+                  data-bs-parents="#faqAccordionA"
                 >
                   <div class="accordion-body">
                     <strong>This is the third item’s accordion body.</strong> It
@@ -960,7 +970,7 @@
               <div class="accordion-item mt-4 rounded-2">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button rounded-2"
+                    class="accordion-button rounded-2 collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseBOne"
@@ -973,8 +983,8 @@
                 </h2>
                 <div
                   id="collapseBOne"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#faqAccordionB"
+                  class="accordion-collapse collapse"
+                  data-bs-parents="#faqAccordionB"
                 >
                   <div class="accordion-body">
                     <strong>This is the first item’s accordion body.</strong> It
@@ -1006,7 +1016,7 @@
                 <div
                   id="collapseBTwo"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordionB"
+                  data-bs-parents="#faqAccordionB"
                 >
                   <div class="accordion-body">
                     <strong>This is the second item’s accordion body.</strong>
@@ -1038,7 +1048,7 @@
                 <div
                   id="collapseBThree"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordionB"
+                  data-bs-parents="#faqAccordionB"
                 >
                   <div class="accordion-body">
                     <strong>This is the third item’s accordion body.</strong> It
@@ -1076,7 +1086,7 @@
                 <div
                   id="q1"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
+                  data-bs-parents="#faqAccordion"
                 >
                   <div class="accordion-body text-muted">
                     Pick the license that matches how you intend to ship:
@@ -1102,7 +1112,7 @@
                 <div
                   id="q2"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
+                  data-bs-parents="#faqAccordion"
                 >
                   <div class="accordion-body text-muted">
                     Database credentials are generated automatically and
@@ -1127,7 +1137,7 @@
                 <div
                   id="q3"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion"
+                  data-bs-parents="#faqAccordion"
                 >
                   <div class="accordion-body text-muted">
                     Sign in to your account and open the Billing tab - all past
@@ -1157,7 +1167,7 @@
                 <div
                   id="q4"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion2"
+                  data-bs-parents="#faqAccordion2"
                 >
                   <div class="accordion-body text-muted">
                     Pick the license that matches how you intend to ship:
@@ -1183,7 +1193,7 @@
                 <div
                   id="q5"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion2"
+                  data-bs-parents="#faqAccordion2"
                 >
                   <div class="accordion-body text-muted">
                     Database credentials are generated automatically and
@@ -1208,7 +1218,7 @@
                 <div
                   id="q6"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#faqAccordion2"
+                  data-bs-parents="#faqAccordion2"
                 >
                   <div class="accordion-body text-muted">
                     Sign in to your account and open the Billing tab - all past

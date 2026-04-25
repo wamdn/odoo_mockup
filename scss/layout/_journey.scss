@@ -25,7 +25,7 @@
 .btn-play {
   position: absolute;
   top: 0.9rem;
-  right: 0.9rem;
+  left: 0.9rem;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -46,19 +46,31 @@
   }
 }
 
-.btn-play--bottom-left {
-  bottom: 0.9rem;
-  left: 0.9rem;
-  right: auto;
-  top: auto;
+.btn-play--right {
+  left: auto;
+  right: 0.9rem;
 }
 
-// .journey-section-connector {
-//   position: relative;
-// }
+.journey-section-connector {
+  position: relative;
+}
 
-// .journey-section-connector::after {
-//   content: '';
-//   position: absolute;
 
-// }
+@include media-breakpoint-up(lg) {
+  .journey-section-connector::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 170px;
+    width: 160px;
+    background-color: green;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='170' aria-hidden='true' class='journey-connector'%3E%3Cpath d='M3 167C3 167 118 134.4 156 2' fill='none' stroke='%23ADB5BD' opacity='0.3' stroke-width='3' stroke-dasharray='6 8'/%3E%3C/svg%3E");
+
+    left: 50%;
+    transform: translate(-50%,-100%);
+  }
+
+  .journey-section-connector--reverse.journey-section-connector::before {
+    transform: translate(-50%,-100%) scale(-1) rotate(-90deg);
+  }
+}
