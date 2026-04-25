@@ -259,22 +259,60 @@
        Uses .section--after-hero so the overlapping hero card sits cleanly
        above this section.
        ===================================================================== -->
-      <section id="tools" class="section section--after-hero">
+      <section id="tools" class="section section--after-hero journey-tools">
         <div class="container">
-          <div class="row align-items-center g-5">
+          <div class="row align-items-center journey-tools__row">
             <div class="col-lg-6">
-              <img
-                src="assets/img/img_01.jpg"
-                alt="Team of designers and developers collaborating"
-                class="img-rounded shadow-soft"
-              />
+              <div class="journey-tools__media">
+                <div class="journey-tools__card shadow-soft" aria-hidden="true">
+                  <div class="journey-tools__card-title">Awesome projects</div>
+                  <div class="journey-tools__task">
+                    <span class="journey-tools__task-name">Create the new logo</span>
+                    <span class="journey-tools__task-arrow"
+                      ><i class="bi bi-chevron-right"></i
+                    ></span>
+                  </div>
+                  <div class="journey-tools__progress">
+                    <span class="journey-tools__progress-fill"></span>
+                  </div>
+                  <div class="journey-tools__task">
+                    <span class="journey-tools__task-name">Set up the color palette</span>
+                    <span class="journey-tools__task-arrow"
+                      ><i class="bi bi-chevron-right"></i
+                    ></span>
+                  </div>
+                  <div class="journey-tools__progress">
+                    <span class="journey-tools__progress-fill"></span>
+                  </div>
+                  <div class="journey-tools__task journey-tools__task--last">
+                    <span class="journey-tools__task-name">Wireframe and prototype</span>
+                    <span class="journey-tools__task-time">6:50</span>
+                    <span class="journey-tools__task-arrow"
+                      ><i class="bi bi-chevron-right"></i
+                    ></span>
+                  </div>
+                  <div class="journey-tools__progress">
+                    <span class="journey-tools__progress-fill journey-tools__progress-fill--short"></span>
+                  </div>
+                </div>
+                <div class="journey-tools__image-wrap">
+                  <img
+                    src="assets/img/img_01.jpg"
+                    alt="Team of designers and developers collaborating"
+                    class="img-rounded shadow-soft journey-tools__image"
+                  />
+                  <a href="#" class="journey-tools__play" aria-label="Play video">
+                    Play video <i class="bi bi-play-fill" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6">
-              <span class="eyebrow eyebrow--orange mb-3">Tools</span>
-              <h2 class="display-5 fw-bold mt-3 mb-3">
+              <span class="journey-tools__eyebrow">Tools</span>
+              <h2 class="journey-tools__title">
                 We build for designers and developers
               </h2>
-              <p class="text-muted mb-4" style="max-width: 32rem">
+              <p class="journey-tools__copy">
                 Get components and examples, including tons of variables that
                 will help you grow your business.
               </p>
