@@ -99,6 +99,12 @@
     font-feature-settings: "tnum";
   }
 
+  .credit-card__status {
+    background-color: $success;
+    padding: .4em .8em;
+    border-radius: $border-radius-sm;
+  }
+
   .transaction {
     display: flex;
     align-items: center;

@@ -36,7 +36,7 @@
        - Transparent background; the blue comes from .hero-wrapper.
        ===================================================================== -->
       <nav class="navbar navbar-expand-lg navbar-dark site-nav py-3">
-        <div class="container border-bottom py-3">
+        <div class="container site-nav__underline py-3">
           <a class="navbar-brand d-flex align-items-center gap-2" href="#">
             <img src="assets/logos/odoo-white.svg" alt="Odoo" height="22" />
           </a>
@@ -135,12 +135,17 @@
                   <div
                     class="d-flex justify-content-between align-items-center mb-4"
                   >
-                    <span class="small opacity-75">Active</span>
-                    <i class="bi bi-wifi" style="transform: rotate(90deg)"></i>
+                    <img
+                      src="assets/logos/mastercard.svg"
+                      alt="Mastercard"
+                      height="28"
+                      class="align-self-end"
+                    />
+                    <span class="credit-card__status small text-light">Active</span>
                   </div>
                   <div class="small opacity-75">CARD NUMBER</div>
                   <div class="fs-5 fw-semibold letter-spacing-1 mb-3">
-                    4358&nbsp;&nbsp;7421&nbsp;&nbsp;9256&nbsp;&nbsp;6682
+                    4358&nbsp;-&nbsp;7421&nbsp;-&nbsp;9256&nbsp;-&nbsp;6682
                   </div>
                   <div class="d-flex justify-content-between">
                     <div>
@@ -151,19 +156,11 @@
                       <div class="small opacity-75">EXPIRY DATE</div>
                       <div class="fw-semibold">11/23</div>
                     </div>
-                    <img
-                      src="assets/logos/mastercard.svg"
-                      alt="Mastercard"
-                      height="28"
-                      class="align-self-end"
-                    />
+                    <i class="bi bi-wifi" style="transform: rotate(90deg)"></i>
                   </div>
                 </div>
 
                 <div class="transaction">
-                  <span class="logo text-success"
-                    ><i class="bi bi-cup-hot-fill"></i
-                  ></span>
                   <div class="flex-grow-1">
                     <div class="fw-semibold">Starbucks</div>
                     <div class="small text-muted">
@@ -175,9 +172,6 @@
                   </div>
                 </div>
                 <div class="transaction">
-                  <span class="logo text-dark"
-                    ><i class="bi bi-bag-fill"></i
-                  ></span>
                   <div class="flex-grow-1">
                     <div class="fw-semibold">Nike Sports</div>
                     <div class="small text-muted">
