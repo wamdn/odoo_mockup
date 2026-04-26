@@ -23,14 +23,3 @@
 
 // Sections with subtle grey background alternation.
 .section-alt { background-color: $light; }
-
-// Give the section immediately after the hero enough top padding to sit
-// below the overlapping hero card. The wave already adds ~140px of visual
-// buffer on lg+, so we only need a bit more for the card to clear.
-.section--after-hero {
-  padding-top: 4rem;
-
-  @include media-breakpoint-up(lg) {
-    padding-top: 7rem;
-  }
-}

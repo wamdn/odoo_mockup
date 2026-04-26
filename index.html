@@ -8,6 +8,9 @@
       name="description"
       content="Build a beautiful, modern website with flexible components built from scratch."
     />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 
     <!-- Google font (Inter) to match the clean typographic feel of the mock-up. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,9 +91,9 @@
          of the hero for a layered effect (handled in scss/custom.scss).
        ===================================================================== -->
       <header id="hero" class="hero">
-        <div class="container">
+        <div class="container py-7">
           <div class="row align-items-center g-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6 me-5 me-md-0">
               <h1 class="fw-bold mb-4 rise-1">Development<br />done right</h1>
               <p class="lead opacity-75 mb-4 rise-2" style="max-width: 32rem">
                 Build a beautiful, modern website with flexible components built
@@ -199,7 +202,7 @@
          horizontal) edge that cuts into the white page below. In the
          mock-up the blue extends LOWER on the RIGHT (under the hero
          card) and ends higher on the LEFT. -->
-      <svg
+      <!-- <svg
         class="hero-wave"
         viewBox="0 0 1440 140"
         preserveAspectRatio="none"
@@ -207,7 +210,7 @@
         aria-hidden="true"
       >
         <polygon points="0,20 1440,110 1440,140 0,140" fill="#ffffff" />
-      </svg>
+      </svg> -->
     </div>
     <!-- /.hero-wrapper -->
 
@@ -220,7 +223,7 @@
        of the sections without interfering with click targets (it's marked
        pointer-events: none + aria-hidden in the SVG).
        ========================================================================== -->
-    <div class="journey position-relative">
+    <div class="journey position-relative triangle-top triangle-top--white">
       <!-- Decorative dashed connector. Drawn behind content via z-index: 0 and
        ignored by the pointer (pointer-events: none). -->
       <!-- <svg
@@ -691,7 +694,7 @@
     </section>
 
     <!-- Diagonal transition: white banner area -> grey Awards section. -->
-    <svg
+    <!-- <svg
       class="section-wave"
       viewBox="0 0 1440 70"
       preserveAspectRatio="none"
@@ -699,14 +702,14 @@
       aria-hidden="true"
     >
       <polygon points="0,10 1440,55 1440,70 0,70" fill="#F3F5F9" />
-    </svg>
+    </svg> -->
 
     <!-- =====================================================================
        AWARDS
        5 clickable cards. Hover swaps to colored bg + white logo.
        row-cols-* utilities generate 2 columns on mobile, 5 on desktop.
        ===================================================================== -->
-    <section id="awards" class="section section-alt">
+    <section id="awards" class="section section-alt mt-5">
       <div class="container text-center">
         <span class="eyebrow eyebrow--blue mb-3">Awards</span>
         <h2 class="display-5 fw-bold mt-3 mb-3">
@@ -831,7 +834,7 @@
     </section>
 
     <!-- Diagonal transition: grey Awards -> white FAQ section. -->
-    <svg
+    <!-- <svg
       class="section-wave"
       viewBox="0 0 1440 70"
       preserveAspectRatio="none"
@@ -839,14 +842,14 @@
       aria-hidden="true"
     >
       <polygon points="0,55 1440,10 1440,70 0,70" fill="#ffffff" />
-    </svg>
+    </svg> -->
 
     <!-- =====================================================================
        HELPFUL ANSWERS (accordion)
        Uses Bootstrap's .accordion with data-bs-parents so only one panel
        can be open at a time. Flush styling is defined in SCSS.
        ===================================================================== -->
-    <section id="faq" class="section">
+    <section id="faq" class="section triangle-top triangle-top--white">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-8">
