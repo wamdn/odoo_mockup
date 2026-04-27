@@ -1,12 +1,7 @@
 .journey-tools {
-  // .journey-tools__row {
-  //   --bs-gutter-y: 3rem;
-  //   --bs-gutter-x: 4.75rem;
-  // }
 
   .journey-tools__media {
     position: relative;
-    // width: min(100%, 560px);
   }
 
   .journey-tools__image-wrap {
@@ -19,34 +14,9 @@
     width: 100%;
   }
 
-  // .journey-tools__play {
-  //   position: absolute;
-  //   top: 0.9rem;
-  //   right: 0.9rem;
-  //   display: inline-flex;
-  //   align-items: center;
-  //   gap: 0.4rem;
-  //   height: 2rem;
-  //   padding: 0 0.85rem;
-  //   border-radius: 0.5rem;
-  //   background: rgba(255, 255, 255, 0.9);
-  //   color: #3e4a67;
-  //   font-size: 0.69rem;
-  //   font-weight: 600;
-  //   line-height: 1;
-  //   text-decoration: none;
-  //   box-shadow: 0 6px 18px rgba(13, 24, 58, 0.12);
-
-  //   i {
-  //     color: #3e4a67;
-  //     font-size: 0.78rem;
-  //   }
-  // }
-
   .journey-tools__card {
     position: relative;
     z-index: 1;
-    // width: min(100%, 31rem);
     margin-top: 2.85rem;
     background: #f8f9fb;
     border: 1px solid #e9ecf2;
@@ -85,10 +55,6 @@
     line-height: 1;
   }
 
-  // .journey-tools__task--last .journey-tools__task-arrow {
-  //   margin-left: 0.1rem;
-  // }
-
   .journey-tools__progress {
     height: 0.12rem;
     width: 100%;
@@ -115,47 +81,10 @@
     width: 80%;
   }
 
-  // .journey-tools__progress-fill--short {
-  //   width: 64%;
-  // }
-  // .journey-tools__eyebrow {
-  //   display: inline-flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   min-height: 1.55rem;
-  //   border-radius: 999px;
-  //   padding: 0.22rem 0.62rem;
-  //   background: #f9c74f;
-  //   color: #ffffff;
-  //   font-size: 0.63rem;
-  //   font-weight: 600;
-  //   line-height: 1;
-  // }
-
-  // .journey-tools__title {
-  //   margin: 1.45rem 0 1.35rem;
-  //   max-width: 28rem;
-  //   color: #1b2a49;
-  //   font-size: clamp(2.15rem, 2.35vw, 2.75rem);
-  //   font-weight: 600;
-  //   line-height: 1.3;
-  //   letter-spacing: -0.01em;
-  // }
-
-  // .journey-tools__copy {
-  //   max-width: 27rem;
-  //   margin-bottom: 0;
-  //   color: #7f879a;
-  //   font-size: 1.2rem;
-  //   font-weight: 400;
-  //   line-height: 1.8;
-  // }
-
   @include media-breakpoint-up(lg) {
     .journey-tools__media {
       margin-left: 0.2rem;
       margin-top: 5rem;
-      // min-height: 24rem;
     }
 
     .journey-tools__image-wrap {
