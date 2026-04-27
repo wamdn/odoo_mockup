@@ -12947,7 +12947,9 @@ body {
   }
 }
 .hero-card .credit-card {
-  background: linear-gradient(135deg, #0B1838 0%, #1A2E6D 100%);
+  background: #1f1347 url("../assets/img/usa.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
   color: #fff;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
