@@ -12952,6 +12952,10 @@ body {
   border-radius: 1rem;
   padding: 1rem 1.25rem;
   font-feature-settings: "tnum";
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero-card .credit-card__status {
   background-color: #1DC37A;
