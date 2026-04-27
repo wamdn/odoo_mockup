@@ -91,7 +91,7 @@
          of the hero for a layered effect (handled in scss/custom.scss).
        ===================================================================== -->
       <header id="hero" class="hero">
-        <div class="container py-7">
+        <div class="container py-5 py-md-7">
           <div class="row align-items-center g-5">
             <div class="col-lg-6 me-5 me-md-0">
               <h1 class="fw-bold mb-4 rise-1">Development<br />done right</h1>
@@ -197,79 +197,299 @@
         </div>
       </header>
     </div>
-    <!-- ==========================================================================
-       "JOURNEY" BLOCK
-       Tools / Features / Technology / Install share one continuous white
-       background. A decorative dashed SVG curve snakes between the rows,
-       linking them visually — matching the mock-up. The wrapper uses
-       position: relative so the curve can be absolutely positioned on top
-       of the sections without interfering with click targets (it's marked
-       pointer-events: none + aria-hidden in the SVG).
-       ========================================================================== -->
-    <div class="journey position-relative triangle-top triangle-top--white">
-      <!-- =====================================================================
-       TOOLS
-       Uses .section--after-hero so the overlapping hero card sits cleanly
-       above this section.
-       ===================================================================== -->
-      <section id="tools" class="section section--after-hero journey-tools">
-        <div class="container">
-          <div class="row align-items-center journey-tools__row">
-            <div class="col-lg-6">
-              <div class="journey-tools__media mb-5 mb-lg-0">
-                <div class="journey-tools__card shadow-soft" aria-hidden="true">
-                  <div class="journey-tools__card-title">Awesome projects</div>
-                  <div class="journey-tools__task">
-                    <span class="journey-tools__task-name"
-                      >Create the new logo</span
-                    >
-                    <span class="journey-tools__task-time">3:00</span>
-                    <span class="journey-tools__task-arrow"
-                      ><i class="bi bi-chevron-right"></i
-                    ></span>
-                  </div>
-                  <div class="journey-tools__progress">
-                    <span class="journey-tools__progress-fill journey-tools__progress-fill--40"></span>
-                  </div>
-                  <div class="journey-tools__task">
-                    <span class="journey-tools__task-name"
-                      >Set up the color palette</span
-                    >
-                    <span class="journey-tools__task-time">4:30</span>
-                    <span class="journey-tools__task-arrow"
-                      ><i class="bi bi-chevron-right"></i
-                    ></span>
-                  </div>
-                  <div class="journey-tools__progress">
-                    <span class="journey-tools__progress-fill journey-tools__progress-fill--60"></span>
+    <main>
+      <!-- ==========================================================================
+        "JOURNEY" BLOCK
+        Tools / Features / Technology / Install share one continuous white
+        background. A decorative dashed SVG curve snakes between the rows,
+        linking them visually — matching the mock-up. The wrapper uses
+        position: relative so the curve can be absolutely positioned on top
+        of the sections without interfering with click targets (it's marked
+        pointer-events: none + aria-hidden in the SVG).
+        ========================================================================== -->
+      <div class="journey position-relative triangle-top triangle-top--white">
+        <!-- =====================================================================
+        TOOLS
+        Uses .section--after-hero so the overlapping hero card sits cleanly
+        above this section.
+        ===================================================================== -->
+        <section id="tools" class="section section--after-hero journey-tools">
+          <div class="container">
+            <div class="row align-items-center journey-tools__row">
+              <div class="col-lg-6">
+                <div class="journey-tools__media mb-5 mb-lg-0">
+                  <div class="journey-tools__card shadow-soft" aria-hidden="true">
+                    <div class="journey-tools__card-title">Awesome projects</div>
+                    <div class="journey-tools__task">
+                      <span class="journey-tools__task-name"
+                        >Create the new logo</span
+                      >
+                      <span class="journey-tools__task-time">3:00</span>
+                      <span class="journey-tools__task-arrow"
+                        ><i class="bi bi-chevron-right"></i
+                      ></span>
+                    </div>
+                    <div class="journey-tools__progress">
+                      <span class="journey-tools__progress-fill journey-tools__progress-fill--40"></span>
+                    </div>
+                    <div class="journey-tools__task">
+                      <span class="journey-tools__task-name"
+                        >Set up the color palette</span
+                      >
+                      <span class="journey-tools__task-time">4:30</span>
+                      <span class="journey-tools__task-arrow"
+                        ><i class="bi bi-chevron-right"></i
+                      ></span>
+                    </div>
+                    <div class="journey-tools__progress">
+                      <span class="journey-tools__progress-fill journey-tools__progress-fill--60"></span>
+                    </div>
+
+                    <div class="journey-tools__task">
+                      <span class="journey-tools__task-name"
+                        >Wireframe and prototype</span
+                      >
+                      <span class="journey-tools__task-time">6:50</span>
+                      <span class="journey-tools__task-arrow"
+                        ><i class="bi bi-chevron-right"></i
+                      ></span>
+                    </div>
+                    <div class="journey-tools__progress">
+                      <span
+                        class="journey-tools__progress-fill journey-tools__progress-fill--80"
+                      ></span>
+                    </div>
+
                   </div>
 
-                  <div class="journey-tools__task">
-                    <span class="journey-tools__task-name"
-                      >Wireframe and prototype</span
+                  <div class="journey-tools__image-wrap">
+                    <img
+                      src="assets/img/img_01.jpg"
+                      alt="Team of designers and developers collaborating"
+                      class="img-rounded shadow-soft journey-tools__image"
+                    />
+                    <a
+                      href="#"
+                      class="btn-play btn-play--right"
+                      aria-label="Play video"
                     >
-                    <span class="journey-tools__task-time">6:50</span>
-                    <span class="journey-tools__task-arrow"
-                      ><i class="bi bi-chevron-right"></i
-                    ></span>
+                      Play video
+                      <i class="bi bi-play-fill" aria-hidden="true"></i>
+                    </a>
                   </div>
-                  <div class="journey-tools__progress">
-                    <span
-                      class="journey-tools__progress-fill journey-tools__progress-fill--80"
-                    ></span>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <span class="eyebrow eyebrow--orange mb-3">Tools</span>
+                <h2 class="display-5 fw-bold mt-3 mb-3">
+                  We build for designers and developers
+                </h2>
+                <p class="text-muted mb-4">
+                  Get components and examples, including tons of variables that
+                  will help you grow your business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================================
+        FEATURES - with the "Awesome projects" task card floating over the
+        image on the left column. No background change from Tools: the whole
+        "journey" block shares one continuous white background.
+        ===================================================================== -->
+        <section class="section journey-section-connector journey-section-connector--reverse">
+          <div class="container">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-6 order-lg-2">
+                <div class="feature-media feature-media--right position-relative">
+                  <img
+                    src="assets/img/img_02.jpg"
+                    alt="Designer at work"
+                    class="img-rounded shadow-soft"
+                  />
+
+                  <a
+                    href="#"
+                    class="btn-play"
+                    aria-label="Play video"
+                  >
+                    Play video
+                    <i class="bi bi-play-fill" aria-hidden="true"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="col-lg-5 order-lg-1">
+                <span class="eyebrow eyebrow--green mb-3">Features</span>
+                <h2 class="display-5 fw-bold mt-3 mb-3">
+                  Awesome projects for creative teams
+                </h2>
+                <p class="text-muted mb-4">
+                  Get components and examples, including tons of variables that
+                  will help you grow your business.
+                </p>
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex align-items-start gap-2 mb-2">
+                    <i class="bi bi-check-square-fill text-success"></i>
+                    Perfect for modern startups
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-square-fill text-success"></i>
+                    Fully customizable and scalable
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================================
+        TECHNOLOGY (part of the "journey" block - same white background).
+        ===================================================================== -->
+        <section id="technology" class="section journey-tech journey-section-connector">
+          <div class="container">
+            <div class="row align-items-center g-5">
+
+              <!-- LEFT -->
+              <div class="col-md-6 col-lg-3">
+                <div class="journey-tech__column d-flex flex-column gap-4">
+
+                  <!-- Profile card -->
+                  <div class="journey-tech__card journey-tech__card--profile card overflow-hidden">
+                    <img src="assets/img/person_03.jpg" class="journey-tech__image" alt="profile">
+
+                    <div class="journey-tech__card-footer d-flex align-items-center p-3">
+                      <div class="journey-tech__avatar me-2">JH</div>
+                      <div class="flex-grow-1 fw-medium">Jimmy Hendrix</div>
+                      <i class="bi bi-heart journey-tech__icon"></i>
+                    </div>
+                  </div>
+
+                  <!-- Components -->
+                  <div class="journey-tech__card journey-tech__card--small card p-3 d-flex flex-row align-items-center">
+                      <div class="journey-tech__icon-check me-2">
+                        <i class="bi bi-check-lg"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="mb-0 fw-semibold">300+ components</h6>
+                        <small class="text-muted">Built to be customized.</small>
+                      </div>
                   </div>
 
                 </div>
+              </div>
 
-                <div class="journey-tools__image-wrap">
+              <!-- MIDDLE -->
+              <div class="col-md-6 col-lg-3">
+                <div class="journey-tech__column d-flex flex-column gap-4">
+
+                  <!-- Rating -->
+                  <div class="journey-tech__card journey-tech__card--rating card p-4 py-md-5 gap-3 text-center">
+                    <img class="w-50 align-self-center" src="assets/logos/airbnb.svg" alt="airbnb">
+
+                    <div class="journey-tech__stars mb-2">
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star text-black-50"></i>
+                    </div>
+
+                    <strong>4.95 out of 5 stars</strong>
+                    <small class="text-muted d-block">from 23 reviews</small>
+                  </div>
+
+                  <!-- UI kit -->
+                  <div class="journey-tech__card journey-tech__card--ui card p-4 text-center">
+                    <div class="journey-tech__logo mb-2">
+                      <img class="rounded-circle" src="assets/img/company_01.png" alt="the company logo"> 
+                    </div>
+
+                    <p class="mb-3 fw-medium">Website UI Kit</p>
+
+                    <div class="d-flex justify-content-center mb-3">
+                      <img src="assets/img/person_01.jpg" class="journey-tech__avatar-sm">
+                      <img src="assets/img/person_02.jpg" class="journey-tech__avatar-sm">
+                      <img src="assets/img/person_03.jpg" class="journey-tech__avatar-sm">
+                    </div>
+                    <hr class="w-25 align-self-center">
+                    <div class="d-flex justify-content-center gap-3 text-muted">
+                      <i class="bi bi-paperclip"></i>
+                      <i class="bi bi-eye"></i>
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <span class="eyebrow eyebrow--blue mb-3">Technology</span>
+                <h2 class="display-5 fw-bold mt-3 mb-3">
+                  We use the latest technologies on the market
+                </h2>
+                <p class="text-muted mb-4" style="max-width: 32rem">
+                  Get components and examples, including tons of variables that
+                  will help you grow your business.
+                </p>
+                <a href="#" class="fw-semibold text-primary text-decoration-none btn btn-underline-primary">
+                  See case studies 
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================================
+        EASY TO INSTALL (final section of the "journey" block).
+        ===================================================================== -->
+        <section id="install" class="section journey-section-connector journey-section-connector--reverse">
+          <div class="container">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-6">
+                <span class="eyebrow eyebrow--orange mb-3">Easy to install</span>
+                <h2 class="display-5 fw-bold mt-3 mb-3">
+                  Download, install and run.
+                </h2>
+                <p class="text-muted mb-4" style="max-width: 32rem">
+                  Get components and examples, including tons of variables that
+                  will help you grow your business.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a
+                    href="#"
+                    class="btn btn-dark btn-lg d-inline-flex align-items-center gap-2"
+                  >
+                    <i class="bi bi-apple fs-4"></i>
+                    <span class="text-start lh-1">
+                      <small class="d-block opacity-75">Download on the</small>
+                      <strong>App Store</strong>
+                    </span>
+                  </a>
+                  <a
+                    href="#"
+                    class="btn btn-dark btn-lg d-inline-flex align-items-center gap-2"
+                  >
+                    <i class="bi bi-google-play fs-5"></i>
+                    <span class="text-start lh-1">
+                      <small class="d-block opacity-75">Download on the</small>
+                      <strong>Play Store</strong>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="position-relative">
                   <img
-                    src="assets/img/img_01.jpg"
-                    alt="Team of designers and developers collaborating"
-                    class="img-rounded shadow-soft journey-tools__image"
+                    src="assets/img/img_03.jpg"
+                    alt="People enjoying the app"
+                    class="img-rounded shadow-soft"
                   />
                   <a
                     href="#"
-                    class="btn-play btn-play--right"
+                    class="btn-play"
                     aria-label="Play video"
                   >
                     Play video
@@ -278,634 +498,416 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <span class="eyebrow eyebrow--orange mb-3">Tools</span>
-              <h2 class="display-5 fw-bold mt-3 mb-3">
-                We build for designers and developers
-              </h2>
-              <p class="text-muted mb-4">
-                Get components and examples, including tons of variables that
-                will help you grow your business.
-              </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- =====================================================================
+        INFINITE SOLUTIONS BANNER
+        ===================================================================== -->
+      <section class="py-5 journey-section-connector">
+        <div class="container">
+          <div
+            class="cta-banner d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4"
+          >
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="assets/img/company_01.png"
+                alt=""
+                height="40"
+                class="flex-shrink-0"
+                aria-hidden="true"
+              />
+              <div>
+                <h3 class="h4 fw-bold mb-2">Infinite solutions</h3>
+                <p class="mb-0 opacity-75">
+                  Intuitive markup, powerful and lightning-fast build tools,
+                  everything you need to turn your ideas into incredible products.
+                </p>
+              </div>
             </div>
+            <a href="#" class="btn btn-light btn-lg flex-shrink-0">
+              Learn more <i class="bi bi-arrow-right ms-1"></i>
+            </a>
           </div>
         </div>
       </section>
 
       <!-- =====================================================================
-       FEATURES - with the "Awesome projects" task card floating over the
-       image on the left column. No background change from Tools: the whole
-       "journey" block shares one continuous white background.
-       ===================================================================== -->
-      <section class="section journey-section-connector journey-section-connector--reverse">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6 order-lg-2">
-              <div class="feature-media feature-media--right position-relative">
+        AWARDS
+        5 clickable cards. Hover swaps to colored bg + white logo.
+        row-cols-* utilities generate 2 columns on mobile, 5 on desktop.
+        ===================================================================== -->
+      <section id="awards" class="section section-alt mt-5">
+        <div class="container text-center">
+          <span class="eyebrow eyebrow--blue mb-3">Awards</span>
+          <h2 class="display-5 fw-bold mt-3 mb-3">
+            Awards for design, creativity,<br class="d-none d-md-inline" />
+            and innovation on the Internet
+          </h2>
+          <p class="text-muted mb-5">4.95 out of 5 stars from 23 reviews</p>
+
+          <div
+            class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 g-lg-4 mb-5 awards-grid"
+          >
+            <div class="col">
+              <a href="#" class="award-card" aria-label="Airbnb award">
+                <div class="award-card__rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.95</span>
+                </div>
                 <img
-                  src="assets/img/img_02.jpg"
-                  alt="Designer at work"
-                  class="img-rounded shadow-soft"
+                  src="assets/logos/airbnb.svg"
+                  alt="Airbnb"
+                  class="logo-dark"
                 />
-
-                <a
-                  href="#"
-                  class="btn-play"
-                  aria-label="Play video"
-                >
-                  Play video
-                  <i class="bi bi-play-fill" aria-hidden="true"></i>
-                </a>
-
-              </div>
+                <img
+                  src="assets/logos/airbnb-white.svg"
+                  alt=""
+                  class="logo-light"
+                  aria-hidden="true"
+                />
+                <div class="award-card__meta">23 reviews</div>
+              </a>
             </div>
-
-            <div class="col-lg-5 order-lg-1">
-              <span class="eyebrow eyebrow--green mb-3">Features</span>
-              <h2 class="display-5 fw-bold mt-3 mb-3">
-                Awesome projects for creative teams
-              </h2>
-              <p class="text-muted mb-4">
-                Get components and examples, including tons of variables that
-                will help you grow your business.
-              </p>
-              <ul class="list-unstyled mb-0">
-                <li class="d-flex align-items-start gap-2 mb-2">
-                  <i class="bi bi-check-square-fill text-success"></i>
-                  Perfect for modern startups
-                </li>
-                <li class="d-flex align-items-start gap-2">
-                  <i class="bi bi-check-square-fill text-success"></i>
-                  Fully customizable and scalable
-                </li>
-              </ul>
+            <div class="col">
+              <a href="#" class="award-card" aria-label="Amazon award">
+                <div class="award-card__rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.95</span>
+                </div>
+                <img
+                  src="assets/logos/amazon.svg"
+                  alt="Amazon"
+                  class="logo-dark"
+                />
+                <img
+                  src="assets/logos/amazon.svg"
+                  alt=""
+                  class="logo-light"
+                  aria-hidden="true"
+                  style="filter: brightness(0) invert(1)"
+                />
+                <div class="award-card__meta">23 reviews</div>
+              </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================================
-       TECHNOLOGY (part of the "journey" block - same white background).
-       ===================================================================== -->
-      <section id="technology" class="section journey-tech journey-section-connector">
-        <div class="container">
-          <div class="row align-items-center g-5">
-
-            <!-- LEFT -->
-            <div class="col-md-6 col-lg-3">
-              <div class="journey-tech__column d-flex flex-column gap-4">
-
-                <!-- Profile card -->
-                <div class="journey-tech__card journey-tech__card--profile card overflow-hidden">
-                  <img src="assets/img/person_03.jpg" class="journey-tech__image" alt="profile">
-
-                  <div class="journey-tech__card-footer d-flex align-items-center p-3">
-                    <div class="journey-tech__avatar me-2">JH</div>
-                    <div class="flex-grow-1 fw-medium">Jimmy Hendrix</div>
-                    <i class="bi bi-heart journey-tech__icon"></i>
-                  </div>
+            <div class="col">
+              <a href="#" class="award-card" aria-label="Slack award">
+                <div class="award-card__rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.95</span>
                 </div>
-
-                <!-- Components -->
-                <div class="journey-tech__card journey-tech__card--small card p-3 d-flex flex-row align-items-center">
-                    <div class="journey-tech__icon-check me-2">
-                      <i class="bi bi-check-lg"></i>
-                    </div>
-                    <div class="">
-                      <h6 class="mb-0 fw-semibold">300+ components</h6>
-                      <small class="text-muted">Built to be customized.</small>
-                    </div>
-                </div>
-
-              </div>
+                <img src="assets/logos/slack.svg" alt="Slack" class="logo-dark" />
+                <img
+                  src="assets/logos/slack.svg"
+                  alt=""
+                  class="logo-light"
+                  aria-hidden="true"
+                  style="filter: brightness(0) invert(1)"
+                />
+                <div class="award-card__meta">23 reviews</div>
+              </a>
             </div>
-
-            <!-- MIDDLE -->
-            <div class="col-md-6 col-lg-3">
-              <div class="journey-tech__column d-flex flex-column gap-4">
-
-                <!-- Rating -->
-                <div class="journey-tech__card journey-tech__card--rating card p-4 py-md-5 gap-3 text-center">
-                  <img class="w-50 align-self-center" src="assets/logos/airbnb.svg" alt="airbnb">
-
-                  <div class="journey-tech__stars mb-2">
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star text-black-50"></i>
-                  </div>
-
-                  <strong>4.95 out of 5 stars</strong>
-                  <small class="text-muted d-block">from 23 reviews</small>
+            <div class="col">
+              <a href="#" class="award-card" aria-label="PayPal award">
+                <div class="award-card__rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.95</span>
                 </div>
-
-                <!-- UI kit -->
-                <div class="journey-tech__card journey-tech__card--ui card p-4 text-center">
-                  <div class="journey-tech__logo mb-2">
-                    <img class="rounded-circle" src="assets/img/company_01.png" alt="the company logo"> 
-                  </div>
-
-                  <p class="mb-3 fw-medium">Website UI Kit</p>
-
-                  <div class="d-flex justify-content-center mb-3">
-                    <img src="assets/img/person_01.jpg" class="journey-tech__avatar-sm">
-                    <img src="assets/img/person_02.jpg" class="journey-tech__avatar-sm">
-                    <img src="assets/img/person_03.jpg" class="journey-tech__avatar-sm">
-                  </div>
-                  <hr class="w-25 align-self-center">
-                  <div class="d-flex justify-content-center gap-3 text-muted">
-                    <i class="bi bi-paperclip"></i>
-                    <i class="bi bi-eye"></i>
-                    <i class="bi bi-heart"></i>
-                  </div>
-                </div>
-
-              </div>
+                <img
+                  src="assets/logos/paypal.svg"
+                  alt="PayPal"
+                  class="logo-dark"
+                />
+                <img
+                  src="assets/logos/paypal-white.svg"
+                  alt=""
+                  class="logo-light"
+                  aria-hidden="true"
+                />
+                <div class="award-card__meta">23 reviews</div>
+              </a>
             </div>
-
-            <div class="col-lg-6">
-              <span class="eyebrow eyebrow--blue mb-3">Technology</span>
-              <h2 class="display-5 fw-bold mt-3 mb-3">
-                We use the latest technologies on the market
-              </h2>
-              <p class="text-muted mb-4" style="max-width: 32rem">
-                Get components and examples, including tons of variables that
-                will help you grow your business.
-              </p>
-              <a href="#" class="fw-semibold text-primary text-decoration-none btn btn-underline-primary">
-                See case studies 
+            <div class="col">
+              <a href="#" class="award-card" aria-label="Spotify award">
+                <div class="award-card__rating">
+                  <i class="bi bi-star-fill"></i>
+                  <span>4.95</span>
+                </div>
+                <img
+                  src="assets/logos/spotify.svg"
+                  alt="Spotify"
+                  class="logo-dark"
+                />
+                <img
+                  src="assets/logos/spotify-white.svg"
+                  alt=""
+                  class="logo-light"
+                  aria-hidden="true"
+                />
+                <div class="award-card__meta">23 reviews</div>
               </a>
             </div>
           </div>
+
+          <blockquote class="mx-auto" style="max-width: 42rem">
+            <p class="h4 fw-semibold text-dark">
+              "They build modern-looking websites easily using Tabs."
+            </p>
+            <footer class="text-muted mt-3">- Happy customer</footer>
+          </blockquote>
+          <a href="#" class="fw-semibold text-primary text-decoration-none">
+            Learn more <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
       </section>
 
       <!-- =====================================================================
-       EASY TO INSTALL (final section of the "journey" block).
-       ===================================================================== -->
-      <section id="install" class="section journey-section-connector journey-section-connector--reverse">
+        HELPFUL ANSWERS (accordion)
+        Uses Bootstrap's .accordion with data-bs-parents so only one panel
+        can be open at a time. Flush styling is defined in SCSS.
+        ===================================================================== -->
+      <section id="faq" class="section triangle-top triangle-top--white">
         <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-              <span class="eyebrow eyebrow--orange mb-3">Easy to install</span>
-              <h2 class="display-5 fw-bold mt-3 mb-3">
-                Download, install and run.
-              </h2>
-              <p class="text-muted mb-4" style="max-width: 32rem">
-                Get components and examples, including tons of variables that
-                will help you grow your business.
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+              <h2 class="display-4">Helpful answers</h2>
+              <p class="fw-bold mt-3 mb-3">
+                Start building fast, beautiful, and modern-looking websites in no
+                time.
               </p>
-              <div class="d-flex flex-wrap gap-3">
-                <a
-                  href="#"
-                  class="btn btn-dark btn-lg d-inline-flex align-items-center gap-2"
-                >
-                  <i class="bi bi-apple fs-4"></i>
-                  <span class="text-start lh-1">
-                    <small class="d-block opacity-75">Download on the</small>
-                    <strong>App Store</strong>
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  class="btn btn-dark btn-lg d-inline-flex align-items-center gap-2"
-                >
-                  <i class="bi bi-google-play fs-5"></i>
-                  <span class="text-start lh-1">
-                    <small class="d-block opacity-75">Download on the</small>
-                    <strong>Play Store</strong>
-                  </span>
-                </a>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="accordion faq" id="faqAccordionA">
+                <div class="accordion-item mt-4 rounded-2">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button rounded-2 collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseAOne"
+                      aria-expanded="true"
+                      aria-controls="collapseAOne"
+                    >
+                      <i class="bi bi-file-earmark-check me-3"></i>
+                      Which license do I need?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseAOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parents="#faqAccordionA"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the first item’s accordion body.</strong> It
+                      is shown by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the
+                      showing and hiding via CSS transitions. You can modify any
+                      of this with custom CSS or overriding our default variables.
+                      It’s also worth noting that just about any HTML can go
+                      within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-4 rounded-2 mt-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button rounded-2 collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseATwo"
+                      aria-expanded="false"
+                      aria-controls="collapseATwo"
+                    >
+                      <i class="bi bi-unlock me-3"></i>
+                      How do I get access to my database?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseATwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parents="#faqAccordionA"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the second item’s accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the
+                      showing and hiding via CSS transitions. You can modify any
+                      of this with custom CSS or overriding our default variables.
+                      It’s also worth noting that just about any HTML can go
+                      within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-4 rounded-2 mt-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button rounded-2 collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseAThree"
+                      aria-expanded="false"
+                      aria-controls="collapseAThree"
+                    >
+                      <i class="bi bi-folder me-3"></i>
+                      How do I see previous orders?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseAThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parents="#faqAccordionA"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It
+                      is hidden by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the
+                      showing and hiding via CSS transitions. You can modify any
+                      of this with custom CSS or overriding our default variables.
+                      It’s also worth noting that just about any HTML can go
+                      within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="position-relative">
-                <img
-                  src="assets/img/img_03.jpg"
-                  alt="People enjoying the app"
-                  class="img-rounded shadow-soft"
-                />
-                <a
-                  href="#"
-                  class="btn-play"
-                  aria-label="Play video"
-                >
-                  Play video
-                  <i class="bi bi-play-fill" aria-hidden="true"></i>
-                </a>
+              <div class="accordion faq" id="faqAccordionB">
+                <div class="accordion-item mt-4 rounded-2">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button rounded-2 collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseBOne"
+                      aria-expanded="true"
+                      aria-controls="collapseBOne"
+                    >
+                      <i class="bi bi-file-earmark-check me-3"></i>
+                      Which license do I need?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseBOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parents="#faqAccordionB"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the first item’s accordion body.</strong> It
+                      is shown by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the
+                      showing and hiding via CSS transitions. You can modify any
+                      of this with custom CSS or overriding our default variables.
+                      It’s also worth noting that just about any HTML can go
+                      within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-4 rounded-2 mt-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button rounded-2 collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseBTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseBTwo"
+                    >
+                      <i class="bi bi-unlock me-3"></i>
+                      How do I get access to my database?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseBTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parents="#faqAccordionB"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the second item’s accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the
+                      showing and hiding via CSS transitions. You can modify any
+                      of this with custom CSS or overriding our default variables.
+                      It’s also worth noting that just about any HTML can go
+                      within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-4 rounded-2 mt-4">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button rounded-2 collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseBThree"
+                      aria-expanded="false"
+                      aria-controls="collapseBThree"
+                    >
+                      <i class="bi bi-folder me-3"></i>
+                      How do I see previous orders?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseBThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parents="#faqAccordionB"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It
+                      is hidden by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the
+                      showing and hiding via CSS transitions. You can modify any
+                      of this with custom CSS or overriding our default variables.
+                      It’s also worth noting that just about any HTML can go
+                      within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =====================================================================
+        CTA PILL
+        ===================================================================== -->
+      <section id="cta" class="section pt-0">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center">
+            <h3 class="display-6 fw-semibold mb-4">
+              I want to start a new project.
+            </h3>
+            <div class="d-flex gap-3 flex-shrink-0">
+              <a
+                href="#"
+                class="btn btn-primary fw-semibold text-light px-5 py-3"
+              >
+                Buy now
+                <i class="bi bi-arrow-right-short"></i>
+              </a>
+              <a href="#" class="btn btn-outline fw-semibold">Learn more</a>
             </div>
           </div>
         </div>
       </section>
-    </div>
-
-    <!-- =====================================================================
-       INFINITE SOLUTIONS BANNER
-       ===================================================================== -->
-    <section class="py-5 journey-section-connector">
-      <div class="container">
-        <div
-          class="cta-banner d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4"
-        >
-          <div class="d-flex align-items-center gap-3">
-            <img
-              src="assets/img/company_01.png"
-              alt=""
-              height="40"
-              class="flex-shrink-0"
-              aria-hidden="true"
-            />
-            <div>
-              <h3 class="h4 fw-bold mb-2">Infinite solutions</h3>
-              <p class="mb-0 opacity-75">
-                Intuitive markup, powerful and lightning-fast build tools,
-                everything you need to turn your ideas into incredible products.
-              </p>
-            </div>
-          </div>
-          <a href="#" class="btn btn-light btn-lg flex-shrink-0">
-            Learn more <i class="bi bi-arrow-right ms-1"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================================
-       AWARDS
-       5 clickable cards. Hover swaps to colored bg + white logo.
-       row-cols-* utilities generate 2 columns on mobile, 5 on desktop.
-       ===================================================================== -->
-    <section id="awards" class="section section-alt mt-5">
-      <div class="container text-center">
-        <span class="eyebrow eyebrow--blue mb-3">Awards</span>
-        <h2 class="display-5 fw-bold mt-3 mb-3">
-          Awards for design, creativity,<br class="d-none d-md-inline" />
-          and innovation on the Internet
-        </h2>
-        <p class="text-muted mb-5">4.95 out of 5 stars from 23 reviews</p>
-
-        <div
-          class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 g-lg-4 mb-5 awards-grid"
-        >
-          <div class="col">
-            <a href="#" class="award-card" aria-label="Airbnb award">
-              <div class="award-card__rating">
-                <i class="bi bi-star-fill"></i>
-                <span>4.95</span>
-              </div>
-              <img
-                src="assets/logos/airbnb.svg"
-                alt="Airbnb"
-                class="logo-dark"
-              />
-              <img
-                src="assets/logos/airbnb-white.svg"
-                alt=""
-                class="logo-light"
-                aria-hidden="true"
-              />
-              <div class="award-card__meta">23 reviews</div>
-            </a>
-          </div>
-          <div class="col">
-            <a href="#" class="award-card" aria-label="Amazon award">
-              <div class="award-card__rating">
-                <i class="bi bi-star-fill"></i>
-                <span>4.95</span>
-              </div>
-              <img
-                src="assets/logos/amazon.svg"
-                alt="Amazon"
-                class="logo-dark"
-              />
-              <img
-                src="assets/logos/amazon.svg"
-                alt=""
-                class="logo-light"
-                aria-hidden="true"
-                style="filter: brightness(0) invert(1)"
-              />
-              <div class="award-card__meta">23 reviews</div>
-            </a>
-          </div>
-          <div class="col">
-            <a href="#" class="award-card" aria-label="Slack award">
-              <div class="award-card__rating">
-                <i class="bi bi-star-fill"></i>
-                <span>4.95</span>
-              </div>
-              <img src="assets/logos/slack.svg" alt="Slack" class="logo-dark" />
-              <img
-                src="assets/logos/slack.svg"
-                alt=""
-                class="logo-light"
-                aria-hidden="true"
-                style="filter: brightness(0) invert(1)"
-              />
-              <div class="award-card__meta">23 reviews</div>
-            </a>
-          </div>
-          <div class="col">
-            <a href="#" class="award-card" aria-label="PayPal award">
-              <div class="award-card__rating">
-                <i class="bi bi-star-fill"></i>
-                <span>4.95</span>
-              </div>
-              <img
-                src="assets/logos/paypal.svg"
-                alt="PayPal"
-                class="logo-dark"
-              />
-              <img
-                src="assets/logos/paypal-white.svg"
-                alt=""
-                class="logo-light"
-                aria-hidden="true"
-              />
-              <div class="award-card__meta">23 reviews</div>
-            </a>
-          </div>
-          <div class="col">
-            <a href="#" class="award-card" aria-label="Spotify award">
-              <div class="award-card__rating">
-                <i class="bi bi-star-fill"></i>
-                <span>4.95</span>
-              </div>
-              <img
-                src="assets/logos/spotify.svg"
-                alt="Spotify"
-                class="logo-dark"
-              />
-              <img
-                src="assets/logos/spotify-white.svg"
-                alt=""
-                class="logo-light"
-                aria-hidden="true"
-              />
-              <div class="award-card__meta">23 reviews</div>
-            </a>
-          </div>
-        </div>
-
-        <blockquote class="mx-auto" style="max-width: 42rem">
-          <p class="h4 fw-semibold text-dark">
-            "They build modern-looking websites easily using Tabs."
-          </p>
-          <footer class="text-muted mt-3">- Happy customer</footer>
-        </blockquote>
-        <a href="#" class="fw-semibold text-primary text-decoration-none">
-          Learn more <i class="bi bi-arrow-right"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- =====================================================================
-       HELPFUL ANSWERS (accordion)
-       Uses Bootstrap's .accordion with data-bs-parents so only one panel
-       can be open at a time. Flush styling is defined in SCSS.
-       ===================================================================== -->
-    <section id="faq" class="section triangle-top triangle-top--white">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-lg-8">
-            <h2 class="display-4">Helpful answers</h2>
-            <p class="fw-bold mt-3 mb-3">
-              Start building fast, beautiful, and modern-looking websites in no
-              time.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="accordion faq" id="faqAccordionA">
-              <div class="accordion-item mt-4 rounded-2">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button rounded-2 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseAOne"
-                    aria-expanded="true"
-                    aria-controls="collapseAOne"
-                  >
-                    <i class="bi bi-file-earmark-check me-3"></i>
-                    Which license do I need?
-                  </button>
-                </h2>
-                <div
-                  id="collapseAOne"
-                  class="accordion-collapse collapse"
-                  data-bs-parents="#faqAccordionA"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mt-4 rounded-2 mt-4">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button rounded-2 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseATwo"
-                    aria-expanded="false"
-                    aria-controls="collapseATwo"
-                  >
-                    <i class="bi bi-unlock me-3"></i>
-                    How do I get access to my database?
-                  </button>
-                </h2>
-                <div
-                  id="collapseATwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parents="#faqAccordionA"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mt-4 rounded-2 mt-4">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button rounded-2 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseAThree"
-                    aria-expanded="false"
-                    aria-controls="collapseAThree"
-                  >
-                    <i class="bi bi-folder me-3"></i>
-                    How do I see previous orders?
-                  </button>
-                </h2>
-                <div
-                  id="collapseAThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parents="#faqAccordionA"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item’s accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="accordion faq" id="faqAccordionB">
-              <div class="accordion-item mt-4 rounded-2">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button rounded-2 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseBOne"
-                    aria-expanded="true"
-                    aria-controls="collapseBOne"
-                  >
-                    <i class="bi bi-file-earmark-check me-3"></i>
-                    Which license do I need?
-                  </button>
-                </h2>
-                <div
-                  id="collapseBOne"
-                  class="accordion-collapse collapse"
-                  data-bs-parents="#faqAccordionB"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mt-4 rounded-2 mt-4">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button rounded-2 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseBTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseBTwo"
-                  >
-                    <i class="bi bi-unlock me-3"></i>
-                    How do I get access to my database?
-                  </button>
-                </h2>
-                <div
-                  id="collapseBTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parents="#faqAccordionB"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mt-4 rounded-2 mt-4">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button rounded-2 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseBThree"
-                    aria-expanded="false"
-                    aria-controls="collapseBThree"
-                  >
-                    <i class="bi bi-folder me-3"></i>
-                    How do I see previous orders?
-                  </button>
-                </h2>
-                <div
-                  id="collapseBThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parents="#faqAccordionB"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item’s accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =====================================================================
-       CTA PILL
-       ===================================================================== -->
-    <section id="cta" class="section pt-0">
-      <div class="container">
-        <div class="d-flex flex-column align-items-center">
-          <h3 class="display-6 fw-semibold mb-4">
-            I want to start a new project.
-          </h3>
-          <div class="d-flex gap-3 flex-shrink-0">
-            <a
-              href="#"
-              class="btn btn-primary fw-semibold text-light px-5 py-3"
-            >
-              Buy now
-              <i class="bi bi-arrow-right-short"></i>
-            </a>
-            <a href="#" class="btn btn-outline fw-semibold">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </main>
 
     <!-- =====================================================================
        FOOTER
