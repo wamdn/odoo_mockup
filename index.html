@@ -434,7 +434,7 @@
                   Get components and examples, including tons of variables that
                   will help you grow your business.
                 </p>
-                <a href="#" class="fw-semibold text-primary text-decoration-none btn btn-underline-primary">
+                <a href="#" class="fw-semibold text-primary text-decoration-none btn btn-underline btn-underline--primary">
                   See case studies 
                 </a>
               </div>
@@ -505,22 +505,15 @@
       <!-- =====================================================================
         INFINITE SOLUTIONS BANNER
         ===================================================================== -->
-      <section class="py-5 journey-section-connector">
+      <section class="my-7 journey-section-connector">
         <div class="container">
           <div
             class="cta-banner d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4"
           >
             <div class="d-flex align-items-center gap-3">
-              <img
-                src="assets/img/company_01.png"
-                alt=""
-                height="40"
-                class="flex-shrink-0"
-                aria-hidden="true"
-              />
               <div>
                 <h3 class="h4 fw-bold mb-2">Infinite solutions</h3>
-                <p class="mb-0 opacity-75">
+                <p class="mb-0 opacity-75 w-75">
                   Intuitive markup, powerful and lightning-fast build tools,
                   everything you need to turn your ideas into incredible products.
                 </p>
@@ -553,12 +546,8 @@
           <div
             class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 g-lg-4 mb-5 awards-grid"
           >
-            <div class="col">
+            <article class="col">
               <a href="#" class="award-card" aria-label="Airbnb award">
-                <div class="award-card__rating">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4.95</span>
-                </div>
                 <img
                   src="assets/logos/airbnb.svg"
                   alt="Airbnb"
@@ -570,15 +559,20 @@
                   class="logo-light"
                   aria-hidden="true"
                 />
-                <div class="award-card__meta">23 reviews</div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="#" class="award-card" aria-label="Amazon award">
-                <div class="award-card__rating">
+                <div class="award-card__rating mt-3">
                   <i class="bi bi-star-fill"></i>
-                  <span>4.95</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
                 </div>
+                <p class="fw-bold mb-0">4.95 out of 5 stars</p>
+                <p class="award-card__meta">from 23 reviews</p>
+              </a>
+            </article>
+
+            <article class="col">
+              <a href="#" class="award-card" aria-label="Amazon award">
                 <img
                   src="assets/logos/amazon.svg"
                   alt="Amazon"
@@ -591,15 +585,17 @@
                   aria-hidden="true"
                   style="filter: brightness(0) invert(1)"
                 />
-                <div class="award-card__meta">23 reviews</div>
+                <p class="award-card__text mb-0 mt-3">
+                  They build modern looking websites easily using Tabs.
+                </p>
+                <button href="#" class="fw-semibold text-decoration-none btn btn-underline">
+                  Learn more
+                </button>
               </a>
-            </div>
-            <div class="col">
+            </article>
+
+            <article class="col">
               <a href="#" class="award-card" aria-label="Slack award">
-                <div class="award-card__rating">
-                  <i class="bi bi-star-fill"></i>
-                  <span>4.95</span>
-                </div>
                 <img src="assets/logos/slack.svg" alt="Slack" class="logo-dark" />
                 <img
                   src="assets/logos/slack.svg"
@@ -608,15 +604,43 @@
                   aria-hidden="true"
                   style="filter: brightness(0) invert(1)"
                 />
-                <div class="award-card__meta">23 reviews</div>
+                <p class="award-card__text mb-0 mt-3">
+                  They build modern looking websites easily using Tabs.
+                </p>
+                <button href="#" class="fw-semibold text-decoration-none btn btn-underline">
+                  Learn more
+                </button>
               </a>
-            </div>
-            <div class="col">
-              <a href="#" class="award-card" aria-label="PayPal award">
-                <div class="award-card__rating">
+            </article>
+
+            <article class="col">
+              <a href="#" class="award-card" aria-label="Spotify award">
+                <img
+                  src="assets/logos/spotify.svg"
+                  alt="Spotify"
+                  class="logo-dark"
+                />
+                <img
+                  src="assets/logos/spotify-white.svg"
+                  alt=""
+                  class="logo-light"
+                  aria-hidden="true"
+                />
+                <div class="award-card__rating mt-3">
                   <i class="bi bi-star-fill"></i>
-                  <span>4.95</span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
                 </div>
+                <p class="fw-bold mb-0">4.95 out of 5 stars</p>
+                <p class="award-card__meta">from 23 reviews</p>
+              </a>
+            </article>
+
+
+            <article class="col">
+              <a href="#" class="award-card" aria-label="PayPal award">
                 <img
                   src="assets/logos/paypal.svg"
                   alt="PayPal"
@@ -628,10 +652,16 @@
                   class="logo-light"
                   aria-hidden="true"
                 />
-                <div class="award-card__meta">23 reviews</div>
+                <p class="award-card__text mb-0 mt-3">
+                  They build modern looking websites easily using Tabs.
+                </p>
+                <button href="#" class="fw-semibold text-decoration-none btn btn-underline">
+                  Learn more
+                </button>
               </a>
-            </div>
-            <div class="col">
+            </article>
+
+            <!-- <div class="col">
               <a href="#" class="award-card" aria-label="Spotify award">
                 <div class="award-card__rating">
                   <i class="bi bi-star-fill"></i>
@@ -650,7 +680,7 @@
                 />
                 <div class="award-card__meta">23 reviews</div>
               </a>
-            </div>
+            </div> -->
           </div>
 
           <!-- <blockquote class="mx-auto" style="max-width: 42rem">

@@ -11,10 +11,8 @@
   align-items: center;
   justify-content: center;
   gap: .5rem;
-  aspect-ratio: 16 / 11;
   width: 100%;
-  min-height: 120px;
-  padding: 1rem;
+  padding: 3.5rem 1rem 2.5rem;
   background: #fff;
   border: 1px solid rgba($body-color, .08);
   border-radius: $border-radius-lg;
@@ -23,8 +21,7 @@
   transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
 
   img {
-    max-height: 26px;
-    max-width: 75%;
+    max-height: 2rem;
     transition: filter .25s ease;
   }
 
@@ -47,6 +44,12 @@
     letter-spacing: .02em;
   }
 
+  // Small muted text below the logo.
+  &__text {
+    font-size: .8rem;
+    color: $secondary;
+  }
+
   // Swap to the white logo variant on hover.
   .logo-dark  { display: inline-block; }
   .logo-light { display: none; }
@@ -60,8 +63,21 @@
 
     .logo-dark  { display: none; }
     .logo-light { display: inline-block; }
+    .btn-underline {
+      color: #fff;
+      &::after {
+        background-color: #fff;
+      }
+    }
 
-    .award-card__rating { color: #fff; .bi-star-fill { color: #fff; } }
-    .award-card__meta   { color: rgba(#fff, .85); }
+    .award-card__rating { 
+      color: #fff; 
+      .bi-star-fill { 
+        color: #fff; 
+      } 
+    }
+    .award-card__meta, .award-card__text { 
+      color: rgba(#fff, .85); 
+    }
   }
 }

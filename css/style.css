@@ -13285,8 +13285,8 @@ body {
   .awards-grid {
     align-items: flex-start;
   }
-  .awards-grid > .col:nth-child(even) {
-    margin-top: 2.5rem;
+  .awards-grid > .col:nth-child(odd) {
+    margin-top: 4.5rem;
   }
 }
 
@@ -13341,14 +13341,13 @@ body {
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
 }
 
-.btn-underline-primary {
-  color: #038aff;
+.btn-underline {
   position: relative;
   padding-left: 0;
   padding-right: 0;
 }
 
-.btn-underline-primary::after {
+.btn-underline::after {
   content: "";
   width: 90%;
   height: 0.2em;
@@ -13357,12 +13356,20 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #038aff;
+  background-color: #0B1838;
   transition: 0.3s width ease;
 }
 
-.btn-underline-primary:hover::after {
+.btn-underline:hover::after {
   width: 100%;
+}
+
+.btn-underline--primary {
+  color: #038aff;
+}
+
+.btn-underline--primary::after {
+  background-color: #038aff;
 }
 
 .eyebrow {
@@ -13522,10 +13529,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  aspect-ratio: 16/11;
   width: 100%;
-  min-height: 120px;
-  padding: 1rem;
+  padding: 3.5rem 1rem 2.5rem;
   background: #fff;
   border: 1px solid rgba(30, 35, 64, 0.08);
   border-radius: 1rem;
@@ -13534,8 +13539,7 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
 .award-card img {
-  max-height: 26px;
-  max-width: 75%;
+  max-height: 2rem;
   transition: filter 0.25s ease;
 }
 .award-card__rating {
@@ -13555,6 +13559,10 @@ body {
   color: #6C757D;
   letter-spacing: 0.02em;
 }
+.award-card__text {
+  font-size: 0.8rem;
+  color: #6C757D;
+}
 .award-card .logo-dark {
   display: inline-block;
 }
@@ -13573,13 +13581,19 @@ body {
 .award-card:hover .logo-light, .award-card:focus-visible .logo-light {
   display: inline-block;
 }
+.award-card:hover .btn-underline, .award-card:focus-visible .btn-underline {
+  color: #fff;
+}
+.award-card:hover .btn-underline::after, .award-card:focus-visible .btn-underline::after {
+  background-color: #fff;
+}
 .award-card:hover .award-card__rating, .award-card:focus-visible .award-card__rating {
   color: #fff;
 }
 .award-card:hover .award-card__rating .bi-star-fill, .award-card:focus-visible .award-card__rating .bi-star-fill {
   color: #fff;
 }
-.award-card:hover .award-card__meta, .award-card:focus-visible .award-card__meta {
+.award-card:hover .award-card__meta, .award-card:hover .award-card__text, .award-card:focus-visible .award-card__meta, .award-card:focus-visible .award-card__text {
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -13604,7 +13618,7 @@ body {
   background: #0B1838;
   color: #fff;
   border-radius: 0 4rem 0;
-  padding: 5rem;
+  padding: 7rem 5rem;
 }
 
 .cta-pill {

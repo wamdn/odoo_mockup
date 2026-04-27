@@ -4,8 +4,8 @@
   @include media-breakpoint-up(lg) {
     align-items: flex-start;
 
-    > .col:nth-child(even) {
-      margin-top: 2.5rem;
+    > .col:nth-child(odd) {
+      margin-top: 4.5rem;
     }
   }
 }
